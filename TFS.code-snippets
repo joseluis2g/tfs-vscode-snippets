@@ -1,0 +1,6378 @@
+{
+	"Action": {
+	  "prefix": "Action",
+		"scope": "lua",
+		"body": [
+		"Action()$1"
+	  ],
+	  "description": "Action"
+	},
+	"Action:onUse": {
+	  "prefix": "onUse",
+		"scope": "lua",
+		"body": [
+		"${1:action}:onUse(${2:callback})$3"
+	  ],
+	  "description": "Action:onUse"
+	},
+	"Action:register": {
+	  "prefix": "register",
+		"scope": "lua",
+		"body": [
+		"${1:action}:register()$2"
+	  ],
+	  "description": "Action:register"
+	},
+	"Action:id": {
+	  "prefix": "id",
+		"scope": "lua",
+		"body": [
+		"${1:action}:id(${2:ids})$3"
+	  ],
+	  "description": "Action:id"
+	},
+	"Action:aid": {
+	  "prefix": "aid",
+		"scope": "lua",
+		"body": [
+		"${1:action}:aid(${2:aids})$3"
+	  ],
+	  "description": "Action:aid"
+	},
+	"Action:uid": {
+	  "prefix": "uid",
+		"scope": "lua",
+		"body": [
+		"${1:action}:uid(${2:uids})$3"
+	  ],
+	  "description": "Action:uid"
+	},
+	"Action:allowFarUse": {
+	  "prefix": "allowFarUse",
+		"scope": "lua",
+		"body": [
+		"${1:action}:allowFarUse(${2:bool})$3"
+	  ],
+	  "description": "Action:allowFarUse"
+	},
+	"Action:blockWalls": {
+	  "prefix": "blockWalls",
+		"scope": "lua",
+		"body": [
+		"${1:action}:blockWalls(${2:bool})$3"
+	  ],
+	  "description": "Action:blockWalls"
+	},
+	"Action:checkFloor": {
+	  "prefix": "checkFloor",
+		"scope": "lua",
+		"body": [
+		"${1:action}:checkFloor(${2:bool})$3"
+	  ],
+	  "description": "Action:checkFloor"
+	},
+	"Combat": {
+	  "prefix": "Combat",
+		"scope": "lua",
+		"body": [
+		"Combat()$1"
+	  ],
+	  "description": "Combat"
+	},
+	"Combat:setParameter": {
+	  "prefix": "setParameter",
+		"scope": "lua",
+		"body": [
+		"${1:combat}:setParameter(${2:key}, ${3:value})$4"
+	  ],
+	  "description": "Combat:setParameter"
+	},
+	"Combat:getParameter": {
+	  "prefix": "getParameter",
+		"scope": "lua",
+		"body": [
+		"${1:combat}:getParameter(${2:key})$3"
+	  ],
+	  "description": "Combat:getParameter"
+	},
+	"Combat:setFormula": {
+	  "prefix": "setFormula",
+		"scope": "lua",
+		"body": [
+		"${1:combat}:setFormula(${2:type}, ${3:mina}, ${4:minb}, ${5:maxa}, ${6:maxb})$7"
+	  ],
+	  "description": "Combat:setFormula"
+	},
+	"Combat:setArea": {
+	  "prefix": "setArea",
+		"scope": "lua",
+		"body": [
+		"${1:combat}:setArea(${2:area})$3"
+	  ],
+	  "description": "Combat:setArea"
+	},
+	"Combat:addCondition": {
+	  "prefix": "addCondition",
+		"scope": "lua",
+		"body": [
+		"${1:combat}:addCondition(${2:condition})$3"
+	  ],
+	  "description": "Combat:addCondition"
+	},
+	"Combat:clearConditions": {
+	  "prefix": "clearConditions",
+		"scope": "lua",
+		"body": [
+		"${1:combat}:clearConditions()$2"
+	  ],
+	  "description": "Combat:clearConditions"
+	},
+	"Combat:setCallback": {
+	  "prefix": "setCallback",
+		"scope": "lua",
+		"body": [
+		"${1:combat}:setCallback(${2:key}, ${3:function})$4"
+	  ],
+	  "description": "Combat:setCallback"
+	},
+	"Combat:setOrigin": {
+	  "prefix": "setOrigin",
+		"scope": "lua",
+		"body": [
+		"${1:combat}:setOrigin(${2:origin})$3"
+	  ],
+	  "description": "Combat:setOrigin"
+	},
+	"Combat:execute": {
+	  "prefix": "execute",
+		"scope": "lua",
+		"body": [
+		"${1:combat}:execute(${2:creature}, ${3:variant})$4"
+	  ],
+	  "description": "Combat:execute"
+	},
+	"Condition": {
+	  "prefix": "Condition",
+		"scope": "lua",
+		"body": [
+		"Condition(${1:conditionType[}, ${2:conditionId = CONDITIONID_COMBAT]})$3"
+	  ],
+	  "description": "Condition"
+	},
+	"Condition:delete": {
+	  "prefix": "delete",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:delete()$2"
+	  ],
+	  "description": "Condition:delete"
+	},
+	"Condition:getId": {
+	  "prefix": "getId",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:getId()$2"
+	  ],
+	  "description": "Condition:getId"
+	},
+	"Condition:getSubId": {
+	  "prefix": "getSubId",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:getSubId()$2"
+	  ],
+	  "description": "Condition:getSubId"
+	},
+	"Condition:getType": {
+	  "prefix": "getType",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:getType()$2"
+	  ],
+	  "description": "Condition:getType"
+	},
+	"Condition:getIcons": {
+	  "prefix": "getIcons",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:getIcons()$2"
+	  ],
+	  "description": "Condition:getIcons"
+	},
+	"Condition:getEndTime": {
+	  "prefix": "getEndTime",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:getEndTime()$2"
+	  ],
+	  "description": "Condition:getEndTime"
+	},
+	"Condition:clone": {
+	  "prefix": "clone",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:clone()$2"
+	  ],
+	  "description": "Condition:clone"
+	},
+	"Condition:getTicks": {
+	  "prefix": "getTicks",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:getTicks()$2"
+	  ],
+	  "description": "Condition:getTicks"
+	},
+	"Condition:setTicks": {
+	  "prefix": "setTicks",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:setTicks(${2:ticks})$3"
+	  ],
+	  "description": "Condition:setTicks"
+	},
+	"Condition:setParameter": {
+	  "prefix": "setParameter",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:setParameter(${2:key}, ${3:value})$4"
+	  ],
+	  "description": "Condition:setParameter"
+	},
+	"Condition:getParameter": {
+	  "prefix": "getParameter",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:getParameter(${2:key})$3"
+	  ],
+	  "description": "Condition:getParameter"
+	},
+	"Condition:setFormula": {
+	  "prefix": "setFormula",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:setFormula(${2:mina}, ${3:minb}, ${4:maxa}, ${5:maxb})$6"
+	  ],
+	  "description": "Condition:setFormula"
+	},
+	"Condition:setOutfit": {
+	  "prefix": "setOutfit",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:setOutfit(${2:lookTypeEx}, ${3:lookType}, ${4:lookHead}, ${5:lookBody}, ${6:lookLegs}, ${7:lookFeet[}, ${8:lookAddons[}, ${9:lookMount]]})$10"
+	  ],
+	  "description": "Condition:setOutfit"
+	},
+	"Condition:addDamage": {
+	  "prefix": "addDamage",
+		"scope": "lua",
+		"body": [
+		"${1:condition}:addDamage(${2:rounds}, ${3:time}, ${4:value})$5"
+	  ],
+	  "description": "Condition:addDamage"
+	},
+	"Container": {
+	  "prefix": "Container",
+		"scope": "lua",
+		"body": [
+		"Container(${1:uid})$2"
+	  ],
+	  "description": "Container"
+	},
+	"Container:getSize": {
+	  "prefix": "getSize",
+		"scope": "lua",
+		"body": [
+		"${1:container}:getSize()$2"
+	  ],
+	  "description": "Container:getSize"
+	},
+	"Container:getCapacity": {
+	  "prefix": "getCapacity",
+		"scope": "lua",
+		"body": [
+		"${1:container}:getCapacity()$2"
+	  ],
+	  "description": "Container:getCapacity"
+	},
+	"Container:getEmptySlots": {
+	  "prefix": "getEmptySlots",
+		"scope": "lua",
+		"body": [
+		"${1:container}:getEmptySlots(${2:[recursive = false]})$3"
+	  ],
+	  "description": "Container:getEmptySlots"
+	},
+	"Container:getItemHoldingCount": {
+	  "prefix": "getItemHoldingCount",
+		"scope": "lua",
+		"body": [
+		"${1:container}:getItemHoldingCount()$2"
+	  ],
+	  "description": "Container:getItemHoldingCount"
+	},
+	"Container:getItem": {
+	  "prefix": "getItem",
+		"scope": "lua",
+		"body": [
+		"${1:container}:getItem(${2:index})$3"
+	  ],
+	  "description": "Container:getItem"
+	},
+	"Container:hasItem": {
+	  "prefix": "hasItem",
+		"scope": "lua",
+		"body": [
+		"${1:container}:hasItem(${2:item})$3"
+	  ],
+	  "description": "Container:hasItem"
+	},
+	"Container:addItem": {
+	  "prefix": "addItem",
+		"scope": "lua",
+		"body": [
+		"${1:container}:addItem(${2:itemId[}, ${3:count/subType = 1[}, ${4:index = INDEX_WHEREEVER[}, ${5:flags = 0]]]})$6"
+	  ],
+	  "description": "Container:addItem"
+	},
+	"Container:addItemEx": {
+	  "prefix": "addItemEx",
+		"scope": "lua",
+		"body": [
+		"${1:container}:addItemEx(${2:item[}, ${3:index = INDEX_WHEREEVER[}, ${4:flags = 0]]})$5"
+	  ],
+	  "description": "Container:addItemEx"
+	},
+	"Container:getCorpseOwner": {
+	  "prefix": "getCorpseOwner",
+		"scope": "lua",
+		"body": [
+		"${1:container}:getCorpseOwner()$2"
+	  ],
+	  "description": "Container:getCorpseOwner"
+	},
+	"Container:getItemCountById": {
+	  "prefix": "getItemCountById",
+		"scope": "lua",
+		"body": [
+		"${1:container}:getItemCountById(${2:itemId[}, ${3:subType = -1]})$4"
+	  ],
+	  "description": "Container:getItemCountById"
+	},
+	"Container:getItems": {
+	  "prefix": "getItems",
+		"scope": "lua",
+		"body": [
+		"${1:container}:getItems(${2:[recursive = false]})$3"
+	  ],
+	  "description": "Container:getItems"
+	},
+	"Creature": {
+	  "prefix": "Creature",
+		"scope": "lua",
+		"body": [
+		"Creature(${1:id or name or userdata})$2"
+	  ],
+	  "description": "Creature"
+	},
+	"Creature:getEvents": {
+	  "prefix": "getEvents",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getEvents(${2:type})$3"
+	  ],
+	  "description": "Creature:getEvents"
+	},
+	"Creature:registerEvent": {
+	  "prefix": "registerEvent",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:registerEvent(${2:name})$3"
+	  ],
+	  "description": "Creature:registerEvent"
+	},
+	"Creature:unregisterEvent": {
+	  "prefix": "unregisterEvent",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:unregisterEvent(${2:name})$3"
+	  ],
+	  "description": "Creature:unregisterEvent"
+	},
+	"Creature:isRemoved": {
+	  "prefix": "isRemoved",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:isRemoved()$2"
+	  ],
+	  "description": "Creature:isRemoved"
+	},
+	"Creature:isCreature": {
+	  "prefix": "isCreature",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:isCreature()$2"
+	  ],
+	  "description": "Creature:isCreature"
+	},
+	"Creature:isInGhostMode": {
+	  "prefix": "isInGhostMode",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:isInGhostMode()$2"
+	  ],
+	  "description": "Creature:isInGhostMode"
+	},
+	"Creature:isHealthHidden": {
+	  "prefix": "isHealthHidden",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:isHealthHidden()$2"
+	  ],
+	  "description": "Creature:isHealthHidden"
+	},
+	"Creature:isMovementBlocked": {
+	  "prefix": "isMovementBlocked",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:isMovementBlocked()$2"
+	  ],
+	  "description": "Creature:isMovementBlocked"
+	},
+	"Creature:canSee": {
+	  "prefix": "canSee",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:canSee(${2:position})$3"
+	  ],
+	  "description": "Creature:canSee"
+	},
+	"Creature:canSeeCreature": {
+	  "prefix": "canSeeCreature",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:canSeeCreature(${2:creature})$3"
+	  ],
+	  "description": "Creature:canSeeCreature"
+	},
+	"Creature:canSeeGhostMode": {
+	  "prefix": "canSeeGhostMode",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:canSeeGhostMode(${2:creature})$3"
+	  ],
+	  "description": "Creature:canSeeGhostMode"
+	},
+	"Creature:canSeeInvisibility": {
+	  "prefix": "canSeeInvisibility",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:canSeeInvisibility()$2"
+	  ],
+	  "description": "Creature:canSeeInvisibility"
+	},
+	"Creature:getParent": {
+	  "prefix": "getParent",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getParent()$2"
+	  ],
+	  "description": "Creature:getParent"
+	},
+	"Creature:getId": {
+	  "prefix": "getId",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getId()$2"
+	  ],
+	  "description": "Creature:getId"
+	},
+	"Creature:getName": {
+	  "prefix": "getName",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getName()$2"
+	  ],
+	  "description": "Creature:getName"
+	},
+	"Creature:getTarget": {
+	  "prefix": "getTarget",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getTarget()$2"
+	  ],
+	  "description": "Creature:getTarget"
+	},
+	"Creature:setTarget": {
+	  "prefix": "setTarget",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setTarget(${2:target})$3"
+	  ],
+	  "description": "Creature:setTarget"
+	},
+	"Creature:getFollowCreature": {
+	  "prefix": "getFollowCreature",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getFollowCreature()$2"
+	  ],
+	  "description": "Creature:getFollowCreature"
+	},
+	"Creature:setFollowCreature": {
+	  "prefix": "setFollowCreature",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setFollowCreature(${2:followedCreature})$3"
+	  ],
+	  "description": "Creature:setFollowCreature"
+	},
+	"Creature:getMaster": {
+	  "prefix": "getMaster",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getMaster()$2"
+	  ],
+	  "description": "Creature:getMaster"
+	},
+	"Creature:setMaster": {
+	  "prefix": "setMaster",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setMaster(${2:master})$3"
+	  ],
+	  "description": "Creature:setMaster"
+	},
+	"Creature:getLight": {
+	  "prefix": "getLight",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getLight()$2"
+	  ],
+	  "description": "Creature:getLight"
+	},
+	"Creature:setLight": {
+	  "prefix": "setLight",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setLight(${2:color}, ${3:level})$4"
+	  ],
+	  "description": "Creature:setLight"
+	},
+	"Creature:getSpeed": {
+	  "prefix": "getSpeed",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getSpeed()$2"
+	  ],
+	  "description": "Creature:getSpeed"
+	},
+	"Creature:getBaseSpeed": {
+	  "prefix": "getBaseSpeed",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getBaseSpeed()$2"
+	  ],
+	  "description": "Creature:getBaseSpeed"
+	},
+	"Creature:changeSpeed": {
+	  "prefix": "changeSpeed",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:changeSpeed(${2:delta})$3"
+	  ],
+	  "description": "Creature:changeSpeed"
+	},
+	"Creature:setDropLoot": {
+	  "prefix": "setDropLoot",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setDropLoot(${2:doDrop})$3"
+	  ],
+	  "description": "Creature:setDropLoot"
+	},
+	"Creature:setSkillLoss": {
+	  "prefix": "setSkillLoss",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setSkillLoss(${2:skillLoss})$3"
+	  ],
+	  "description": "Creature:setSkillLoss"
+	},
+	"Creature:getPosition": {
+	  "prefix": "getPosition",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getPosition()$2"
+	  ],
+	  "description": "Creature:getPosition"
+	},
+	"Creature:getTile": {
+	  "prefix": "getTile",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getTile()$2"
+	  ],
+	  "description": "Creature:getTile"
+	},
+	"Creature:getDirection": {
+	  "prefix": "getDirection",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getDirection()$2"
+	  ],
+	  "description": "Creature:getDirection"
+	},
+	"Creature:setDirection": {
+	  "prefix": "setDirection",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setDirection(${2:direction})$3"
+	  ],
+	  "description": "Creature:setDirection"
+	},
+	"Creature:getHealth": {
+	  "prefix": "getHealth",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getHealth()$2"
+	  ],
+	  "description": "Creature:getHealth"
+	},
+	"Creature:setHealth": {
+	  "prefix": "setHealth",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setHealth(${2:health})$3"
+	  ],
+	  "description": "Creature:setHealth"
+	},
+	"Creature:addHealth": {
+	  "prefix": "addHealth",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:addHealth(${2:healthChange})$3"
+	  ],
+	  "description": "Creature:addHealth"
+	},
+	"Creature:getMaxHealth": {
+	  "prefix": "getMaxHealth",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getMaxHealth()$2"
+	  ],
+	  "description": "Creature:getMaxHealth"
+	},
+	"Creature:setMaxHealth": {
+	  "prefix": "setMaxHealth",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setMaxHealth(${2:maxHealth})$3"
+	  ],
+	  "description": "Creature:setMaxHealth"
+	},
+	"Creature:setHiddenHealth": {
+	  "prefix": "setHiddenHealth",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setHiddenHealth(${2:hide})$3"
+	  ],
+	  "description": "Creature:setHiddenHealth"
+	},
+	"Creature:setMovementBlocked": {
+	  "prefix": "setMovementBlocked",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setMovementBlocked(${2:state})$3"
+	  ],
+	  "description": "Creature:setMovementBlocked"
+	},
+	"Creature:getSkull": {
+	  "prefix": "getSkull",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getSkull()$2"
+	  ],
+	  "description": "Creature:getSkull"
+	},
+	"Creature:setSkull": {
+	  "prefix": "setSkull",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setSkull(${2:skull})$3"
+	  ],
+	  "description": "Creature:setSkull"
+	},
+	"Creature:getOutfit": {
+	  "prefix": "getOutfit",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getOutfit()$2"
+	  ],
+	  "description": "Creature:getOutfit"
+	},
+	"Creature:setOutfit": {
+	  "prefix": "setOutfit",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:setOutfit(${2:outfit})$3"
+	  ],
+	  "description": "Creature:setOutfit"
+	},
+	"Creature:getCondition": {
+	  "prefix": "getCondition",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getCondition(${2:conditionType[}, ${3:conditionId = CONDITIONID_COMBAT[}, ${4:subId = 0]]})$5"
+	  ],
+	  "description": "Creature:getCondition"
+	},
+	"Creature:addCondition": {
+	  "prefix": "addCondition",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:addCondition(${2:condition[}, ${3:force = false]})$4"
+	  ],
+	  "description": "Creature:addCondition"
+	},
+	"Creature:removeCondition": {
+	  "prefix": "removeCondition",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:removeCondition(${2:condition[}, ${3:force = false]})$4"
+	  ],
+	  "description": "Creature:removeCondition"
+	},
+	"Creature:hasCondition": {
+	  "prefix": "hasCondition",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:hasCondition(${2:conditionType[}, ${3:subId = 0]})$4"
+	  ],
+	  "description": "Creature:hasCondition"
+	},
+	"Creature:isImmune": {
+	  "prefix": "isImmune",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:isImmune(${2:condition or conditionType})$3"
+	  ],
+	  "description": "Creature:isImmune"
+	},
+	"Creature:remove": {
+	  "prefix": "remove",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:remove()$2"
+	  ],
+	  "description": "Creature:remove"
+	},
+	"Creature:teleportTo": {
+	  "prefix": "teleportTo",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:teleportTo(${2:position[}, ${3:pushMovement = false]})$4"
+	  ],
+	  "description": "Creature:teleportTo"
+	},
+	"Creature:say": {
+	  "prefix": "say",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:say(${2:text[}, ${3:type = TALKTYPE_MONSTER_SAY[}, ${4:ghost = false[}, ${5:target = nullptr[}, ${6:position]]]]})$7"
+	  ],
+	  "description": "Creature:say"
+	},
+	"Creature:getDamageMap": {
+	  "prefix": "getDamageMap",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getDamageMap()$2"
+	  ],
+	  "description": "Creature:getDamageMap"
+	},
+	"Creature:getSummons": {
+	  "prefix": "getSummons",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getSummons()$2"
+	  ],
+	  "description": "Creature:getSummons"
+	},
+	"Creature:getDescription": {
+	  "prefix": "getDescription",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getDescription(${2:distance})$3"
+	  ],
+	  "description": "Creature:getDescription"
+	},
+	"Creature:getPathTo": {
+	  "prefix": "getPathTo",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getPathTo(${2:pos[}, ${3:minTargetDist = 0[}, ${4:maxTargetDist = 1[}, ${5:fullPathSearch = true[}, ${6:clearSight = true[}, ${7:maxSearchDist = 0]]]]]})$8"
+	  ],
+	  "description": "Creature:getPathTo"
+	},
+	"Creature:move": {
+	  "prefix": "move",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:move(${2:tile[}, ${3:flags = 0]})$4"
+	  ],
+	  "description": "Creature:move"
+	},
+	"Creature:getZone": {
+	  "prefix": "getZone",
+		"scope": "lua",
+		"body": [
+		"${1:creature}:getZone()$2"
+	  ],
+	  "description": "Creature:getZone"
+	},
+	"CreatureEvent": {
+	  "prefix": "CreatureEvent",
+		"scope": "lua",
+		"body": [
+		"CreatureEvent(${1:eventName})$2"
+	  ],
+	  "description": "CreatureEvent"
+	},
+	"Creatureevent:type": {
+	  "prefix": "type",
+		"scope": "lua",
+		"body": [
+		"${1:creatureevent}:type(${2:callback})$3"
+	  ],
+	  "description": "Creatureevent:type"
+	},
+	"Creatureevent:register": {
+	  "prefix": "register",
+		"scope": "lua",
+		"body": [
+		"${1:creatureevent}:register()$2"
+	  ],
+	  "description": "Creatureevent:register"
+	},
+	"doPlayerAddItem": {
+	  "prefix": "doPlayerAddItem",
+		"scope": "lua",
+		"body": [
+		"doPlayerAddItem(${1:cid}, ${2:itemid}, ${3:<optional: default: 1> count}, ${4:<optional: default: 1> canDropOnMap}, ${5:<optional: default: 1>subtype})$6"
+	  ],
+	  "description": "doPlayerAddItem"
+	},
+	"isValidUID": {
+	  "prefix": "isValidUID",
+		"scope": "lua",
+		"body": [
+		"isValidUID(${1:uid})$2"
+	  ],
+	  "description": "isValidUID"
+	},
+	"isDepot": {
+	  "prefix": "isDepot",
+		"scope": "lua",
+		"body": [
+		"isDepot(${1:uid})$2"
+	  ],
+	  "description": "isDepot"
+	},
+	"isMovable": {
+	  "prefix": "isMovable",
+		"scope": "lua",
+		"body": [
+		"isMovable(${1:uid})$2"
+	  ],
+	  "description": "isMovable"
+	},
+	"doAddContainerItem": {
+	  "prefix": "doAddContainerItem",
+		"scope": "lua",
+		"body": [
+		"doAddContainerItem(${1:uid}, ${2:itemid}, ${3:<optional> count/subtype})$4"
+	  ],
+	  "description": "doAddContainerItem"
+	},
+	"getDepotId": {
+	  "prefix": "getDepotId",
+		"scope": "lua",
+		"body": [
+		"getDepotId(${1:uid})$2"
+	  ],
+	  "description": "getDepotId"
+	},
+	"getWorldTime": {
+	  "prefix": "getWorldTime",
+		"scope": "lua",
+		"body": [
+		"getWorldTime()$1"
+	  ],
+	  "description": "getWorldTime"
+	},
+	"getWorldLight": {
+	  "prefix": "getWorldLight",
+		"scope": "lua",
+		"body": [
+		"getWorldLight()$1"
+	  ],
+	  "description": "getWorldLight"
+	},
+	"setWorldLight": {
+	  "prefix": "setWorldLight",
+		"scope": "lua",
+		"body": [
+		"setWorldLight(${1:level}, ${2:color})$3"
+	  ],
+	  "description": "setWorldLight"
+	},
+	"getWorldUpTime": {
+	  "prefix": "getWorldUpTime",
+		"scope": "lua",
+		"body": [
+		"getWorldUpTime()$1"
+	  ],
+	  "description": "getWorldUpTime"
+	},
+	"getSubTypeName": {
+	  "prefix": "getSubTypeName",
+		"scope": "lua",
+		"body": [
+		"getSubTypeName(${1:subType})$2"
+	  ],
+	  "description": "getSubTypeName"
+	},
+	"createCombatArea": {
+	  "prefix": "createCombatArea",
+		"scope": "lua",
+		"body": [
+		"createCombatArea(${1:{area}}, ${2:<optional> {extArea}})$3"
+	  ],
+	  "description": "createCombatArea"
+	},
+	"doAreaCombat": {
+	  "prefix": "doAreaCombat",
+		"scope": "lua",
+		"body": [
+		"doAreaCombat(${1:cid}, ${2:type}, ${3:pos}, ${4:area}, ${5:min}, ${6:max}, ${7:effect[}, ${8:origin = ORIGIN_SPELL[}, ${9:blockArmor = false[}, ${10:blockShield = false[}, ${11:ignoreResistances = false]]]]})$12"
+	  ],
+	  "description": "doAreaCombat"
+	},
+	"doTargetCombat": {
+	  "prefix": "doTargetCombat",
+		"scope": "lua",
+		"body": [
+		"doTargetCombat(${1:cid}, ${2:target}, ${3:type}, ${4:min}, ${5:max}, ${6:effect[}, ${7:origin = ORIGIN_SPELL[}, ${8:blockArmor = false[}, ${9:blockShield = false[}, ${10:ignoreResistances = false]]]]})$11"
+	  ],
+	  "description": "doTargetCombat"
+	},
+	"doChallengeCreature": {
+	  "prefix": "doChallengeCreature",
+		"scope": "lua",
+		"body": [
+		"doChallengeCreature(${1:cid}, ${2:target[}, ${3:force = false]})$4"
+	  ],
+	  "description": "doChallengeCreature"
+	},
+	"addEvent": {
+	  "prefix": "addEvent",
+		"scope": "lua",
+		"body": [
+		"addEvent(${1:callback}, ${2:delay}, ${3:...})$4"
+	  ],
+	  "description": "addEvent"
+	},
+	"stopEvent": {
+	  "prefix": "stopEvent",
+		"scope": "lua",
+		"body": [
+		"stopEvent(${1:eventid})$2"
+	  ],
+	  "description": "stopEvent"
+	},
+	"saveServer": {
+	  "prefix": "saveServer",
+		"scope": "lua",
+		"body": [
+		"saveServer()$1"
+	  ],
+	  "description": "saveServer"
+	},
+	"cleanMap": {
+	  "prefix": "cleanMap",
+		"scope": "lua",
+		"body": [
+		"cleanMap()$1"
+	  ],
+	  "description": "cleanMap"
+	},
+	"debugPrint": {
+	  "prefix": "debugPrint",
+		"scope": "lua",
+		"body": [
+		"debugPrint(${1:text})$2"
+	  ],
+	  "description": "debugPrint"
+	},
+	"isInWar": {
+	  "prefix": "isInWar",
+		"scope": "lua",
+		"body": [
+		"isInWar(${1:cid}, ${2:target})$3"
+	  ],
+	  "description": "isInWar"
+	},
+	"getWaypointPosition": {
+	  "prefix": "getWaypointPosition",
+		"scope": "lua",
+		"body": [
+		"getWaypointPosition(${1:name})$2"
+	  ],
+	  "description": "getWaypointPosition"
+	},
+	"sendChannelMessage": {
+	  "prefix": "sendChannelMessage",
+		"scope": "lua",
+		"body": [
+		"sendChannelMessage(${1:channelId}, ${2:type}, ${3:message})$4"
+	  ],
+	  "description": "sendChannelMessage"
+	},
+	"sendGuildChannelMessage": {
+	  "prefix": "sendGuildChannelMessage",
+		"scope": "lua",
+		"body": [
+		"sendGuildChannelMessage(${1:guildId}, ${2:type}, ${3:message})$4"
+	  ],
+	  "description": "sendGuildChannelMessage"
+	},
+	"isScriptsInterface": {
+	  "prefix": "isScriptsInterface",
+		"scope": "lua",
+		"body": [
+		"isScriptsInterface()$1"
+	  ],
+	  "description": "isScriptsInterface"
+	},
+	"setmetatable": {
+	  "prefix": "setmetatable",
+		"scope": "lua",
+		"body": [
+		"setmetatable(${1:className}, ${2:methodsTable})$3"
+	  ],
+	  "description": "setmetatable"
+	},
+	"isMoveable": {
+	  "prefix": "isMoveable",
+		"scope": "lua",
+		"body": [
+		"isMoveable(${1:uid})$2"
+	  ],
+	  "description": "isMoveable"
+	},
+	"getWaypointPositionByName": {
+	  "prefix": "getWaypointPositionByName",
+		"scope": "lua",
+		"body": [
+		"getWaypointPositionByName(${1:name})$2"
+	  ],
+	  "description": "getWaypointPositionByName"
+	},
+	"isType": {
+	  "prefix": "isType",
+		"scope": "lua",
+		"body": [
+		"isType(${1:derived}, ${2:base})$3"
+	  ],
+	  "description": "isType"
+	},
+	"Game.getSpectators": {
+	  "prefix": "Game.getSpectators",
+		"scope": "lua",
+		"body": [
+		"Game.getSpectators(${1:position[}, ${2:multifloor = false[}, ${3:onlyPlayer = false[}, ${4:minRangeX = 0[}, ${5:maxRangeX = 0[}, ${6:minRangeY = 0[}, ${7:maxRangeY = 0]]]]]]})$8"
+	  ],
+	  "description": "Game.getSpectators"
+	},
+	"Game.getPlayers": {
+	  "prefix": "Game.getPlayers",
+		"scope": "lua",
+		"body": [
+		"Game.getPlayers()$1"
+	  ],
+	  "description": "Game.getPlayers"
+	},
+	"Game.loadMap": {
+	  "prefix": "Game.loadMap",
+		"scope": "lua",
+		"body": [
+		"Game.loadMap(${1:path})$2"
+	  ],
+	  "description": "Game.loadMap"
+	},
+	"Game.getExperienceStage": {
+	  "prefix": "Game.getExperienceStage",
+		"scope": "lua",
+		"body": [
+		"Game.getExperienceStage(${1:level})$2"
+	  ],
+	  "description": "Game.getExperienceStage"
+	},
+	"Game.getExperienceForLevel": {
+	  "prefix": "Game.getExperienceForLevel",
+		"scope": "lua",
+		"body": [
+		"Game.getExperienceForLevel(${1:level})$2"
+	  ],
+	  "description": "Game.getExperienceForLevel"
+	},
+	"Game.getMonsterCount": {
+	  "prefix": "Game.getMonsterCount",
+		"scope": "lua",
+		"body": [
+		"Game.getMonsterCount()$1"
+	  ],
+	  "description": "Game.getMonsterCount"
+	},
+	"Game.getPlayerCount": {
+	  "prefix": "Game.getPlayerCount",
+		"scope": "lua",
+		"body": [
+		"Game.getPlayerCount()$1"
+	  ],
+	  "description": "Game.getPlayerCount"
+	},
+	"Game.getNpcCount": {
+	  "prefix": "Game.getNpcCount",
+		"scope": "lua",
+		"body": [
+		"Game.getNpcCount()$1"
+	  ],
+	  "description": "Game.getNpcCount"
+	},
+	"Game.getMonsterTypes": {
+	  "prefix": "Game.getMonsterTypes",
+		"scope": "lua",
+		"body": [
+		"Game.getMonsterTypes()$1"
+	  ],
+	  "description": "Game.getMonsterTypes"
+	},
+	"Game.getCurrencyItems": {
+	  "prefix": "Game.getCurrencyItems",
+		"scope": "lua",
+		"body": [
+		"Game.getCurrencyItems()$1"
+	  ],
+	  "description": "Game.getCurrencyItems"
+	},
+	"Game.getItemTypeByClientId": {
+	  "prefix": "Game.getItemTypeByClientId",
+		"scope": "lua",
+		"body": [
+		"Game.getItemTypeByClientId(${1:clientId})$2"
+	  ],
+	  "description": "Game.getItemTypeByClientId"
+	},
+	"Game.getMountIdByLookType": {
+	  "prefix": "Game.getMountIdByLookType",
+		"scope": "lua",
+		"body": [
+		"Game.getMountIdByLookType(${1:lookType})$2"
+	  ],
+	  "description": "Game.getMountIdByLookType"
+	},
+	"Game.getTowns": {
+	  "prefix": "Game.getTowns",
+		"scope": "lua",
+		"body": [
+		"Game.getTowns()$1"
+	  ],
+	  "description": "Game.getTowns"
+	},
+	"Game.getHouses": {
+	  "prefix": "Game.getHouses",
+		"scope": "lua",
+		"body": [
+		"Game.getHouses()$1"
+	  ],
+	  "description": "Game.getHouses"
+	},
+	"Game.getOutfits": {
+	  "prefix": "Game.getOutfits",
+		"scope": "lua",
+		"body": [
+		"Game.getOutfits(${1:playerSex})$2"
+	  ],
+	  "description": "Game.getOutfits"
+	},
+	"Game.getMounts": {
+	  "prefix": "Game.getMounts",
+		"scope": "lua",
+		"body": [
+		"Game.getMounts()$1"
+	  ],
+	  "description": "Game.getMounts"
+	},
+	"Game.getGameState": {
+	  "prefix": "Game.getGameState",
+		"scope": "lua",
+		"body": [
+		"Game.getGameState()$1"
+	  ],
+	  "description": "Game.getGameState"
+	},
+	"Game.setGameState": {
+	  "prefix": "Game.setGameState",
+		"scope": "lua",
+		"body": [
+		"Game.setGameState(${1:state})$2"
+	  ],
+	  "description": "Game.setGameState"
+	},
+	"Game.getWorldType": {
+	  "prefix": "Game.getWorldType",
+		"scope": "lua",
+		"body": [
+		"Game.getWorldType()$1"
+	  ],
+	  "description": "Game.getWorldType"
+	},
+	"Game.setWorldType": {
+	  "prefix": "Game.setWorldType",
+		"scope": "lua",
+		"body": [
+		"Game.setWorldType(${1:type})$2"
+	  ],
+	  "description": "Game.setWorldType"
+	},
+	"Game.getReturnMessage": {
+	  "prefix": "Game.getReturnMessage",
+		"scope": "lua",
+		"body": [
+		"Game.getReturnMessage(${1:value})$2"
+	  ],
+	  "description": "Game.getReturnMessage"
+	},
+	"Game.getItemAttributeByName": {
+	  "prefix": "Game.getItemAttributeByName",
+		"scope": "lua",
+		"body": [
+		"Game.getItemAttributeByName(${1:name})$2"
+	  ],
+	  "description": "Game.getItemAttributeByName"
+	},
+	"Game.createItem": {
+	  "prefix": "Game.createItem",
+		"scope": "lua",
+		"body": [
+		"Game.createItem(${1:itemId[}, ${2:count[}, ${3:position]]})$4"
+	  ],
+	  "description": "Game.createItem"
+	},
+	"Game.createContainer": {
+	  "prefix": "Game.createContainer",
+		"scope": "lua",
+		"body": [
+		"Game.createContainer(${1:itemId}, ${2:size[}, ${3:position]})$4"
+	  ],
+	  "description": "Game.createContainer"
+	},
+	"Game.createMonster": {
+	  "prefix": "Game.createMonster",
+		"scope": "lua",
+		"body": [
+		"Game.createMonster(${1:monsterName}, ${2:position[}, ${3:extended = false[}, ${4:force = false[}, ${5:magicEffect = CONST_ME_TELEPORT]]]})$6"
+	  ],
+	  "description": "Game.createMonster"
+	},
+	"Game.createNpc": {
+	  "prefix": "Game.createNpc",
+		"scope": "lua",
+		"body": [
+		"Game.createNpc(${1:npcName}, ${2:position[}, ${3:extended = false[}, ${4:force = false[}, ${5:magicEffect = CONST_ME_TELEPORT]]]})$6"
+	  ],
+	  "description": "Game.createNpc"
+	},
+	"Game.createTile": {
+	  "prefix": "Game.createTile",
+		"scope": "lua",
+		"body": [
+		"Game.createTile(${1:position[}, ${2:isDynamic = false]})$3"
+	  ],
+	  "description": "Game.createTile"
+	},
+	"Game.createMonsterType": {
+	  "prefix": "Game.createMonsterType",
+		"scope": "lua",
+		"body": [
+		"Game.createMonsterType(${1:name})$2"
+	  ],
+	  "description": "Game.createMonsterType"
+	},
+	"Game.startRaid": {
+	  "prefix": "Game.startRaid",
+		"scope": "lua",
+		"body": [
+		"Game.startRaid(${1:raidName})$2"
+	  ],
+	  "description": "Game.startRaid"
+	},
+	"Game.getClientVersion": {
+	  "prefix": "Game.getClientVersion",
+		"scope": "lua",
+		"body": [
+		"Game.getClientVersion()$1"
+	  ],
+	  "description": "Game.getClientVersion"
+	},
+	"Game.reload": {
+	  "prefix": "Game.reload",
+		"scope": "lua",
+		"body": [
+		"Game.reload(${1:reloadType})$2"
+	  ],
+	  "description": "Game.reload"
+	},
+	"Game.getAccountStorageValue": {
+	  "prefix": "Game.getAccountStorageValue",
+		"scope": "lua",
+		"body": [
+		"Game.getAccountStorageValue(${1:accountId}, ${2:key})$3"
+	  ],
+	  "description": "Game.getAccountStorageValue"
+	},
+	"Game.setAccountStorageValue": {
+	  "prefix": "Game.setAccountStorageValue",
+		"scope": "lua",
+		"body": [
+		"Game.setAccountStorageValue(${1:accountId}, ${2:key}, ${3:value})$4"
+	  ],
+	  "description": "Game.setAccountStorageValue"
+	},
+	"Game.saveAccountStorageValues": {
+	  "prefix": "Game.saveAccountStorageValues",
+		"scope": "lua",
+		"body": [
+		"Game.saveAccountStorageValues()$1"
+	  ],
+	  "description": "Game.saveAccountStorageValues"
+	},
+	"GlobalEvent": {
+	  "prefix": "GlobalEvent",
+		"scope": "lua",
+		"body": [
+		"GlobalEvent(${1:eventName})$2"
+	  ],
+	  "description": "GlobalEvent"
+	},
+	"Globalevent:type": {
+	  "prefix": "type",
+		"scope": "lua",
+		"body": [
+		"${1:globalevent}:type(${2:callback})$3"
+	  ],
+	  "description": "Globalevent:type"
+	},
+	"Globalevent:register": {
+	  "prefix": "register",
+		"scope": "lua",
+		"body": [
+		"${1:globalevent}:register()$2"
+	  ],
+	  "description": "Globalevent:register"
+	},
+	"Globalevent:time": {
+	  "prefix": "time",
+		"scope": "lua",
+		"body": [
+		"${1:globalevent}:time(${2:time})$3"
+	  ],
+	  "description": "Globalevent:time"
+	},
+	"Globalevent:interval": {
+	  "prefix": "interval",
+		"scope": "lua",
+		"body": [
+		"${1:globalevent}:interval(${2:interval})$3"
+	  ],
+	  "description": "Globalevent:interval"
+	},
+	"Group": {
+	  "prefix": "Group",
+		"scope": "lua",
+		"body": [
+		"Group(${1:id})$2"
+	  ],
+	  "description": "Group"
+	},
+	"Group:getId": {
+	  "prefix": "getId",
+		"scope": "lua",
+		"body": [
+		"${1:group}:getId()$2"
+	  ],
+	  "description": "Group:getId"
+	},
+	"Group:getName": {
+	  "prefix": "getName",
+		"scope": "lua",
+		"body": [
+		"${1:group}:getName()$2"
+	  ],
+	  "description": "Group:getName"
+	},
+	"Group:getFlags": {
+	  "prefix": "getFlags",
+		"scope": "lua",
+		"body": [
+		"${1:group}:getFlags()$2"
+	  ],
+	  "description": "Group:getFlags"
+	},
+	"Group:getAccess": {
+	  "prefix": "getAccess",
+		"scope": "lua",
+		"body": [
+		"${1:group}:getAccess()$2"
+	  ],
+	  "description": "Group:getAccess"
+	},
+	"Group:getMaxDepotItems": {
+	  "prefix": "getMaxDepotItems",
+		"scope": "lua",
+		"body": [
+		"${1:group}:getMaxDepotItems()$2"
+	  ],
+	  "description": "Group:getMaxDepotItems"
+	},
+	"Group:getMaxVipEntries": {
+	  "prefix": "getMaxVipEntries",
+		"scope": "lua",
+		"body": [
+		"${1:group}:getMaxVipEntries()$2"
+	  ],
+	  "description": "Group:getMaxVipEntries"
+	},
+	"Group:hasFlag": {
+	  "prefix": "hasFlag",
+		"scope": "lua",
+		"body": [
+		"${1:group}:hasFlag(${2:flag})$3"
+	  ],
+	  "description": "Group:hasFlag"
+	},
+	"Guild": {
+	  "prefix": "Guild",
+		"scope": "lua",
+		"body": [
+		"Guild(${1:id})$2"
+	  ],
+	  "description": "Guild"
+	},
+	"Guild:getId": {
+	  "prefix": "getId",
+		"scope": "lua",
+		"body": [
+		"${1:guild}:getId()$2"
+	  ],
+	  "description": "Guild:getId"
+	},
+	"Guild:getName": {
+	  "prefix": "getName",
+		"scope": "lua",
+		"body": [
+		"${1:guild}:getName()$2"
+	  ],
+	  "description": "Guild:getName"
+	},
+	"Guild:getMembersOnline": {
+	  "prefix": "getMembersOnline",
+		"scope": "lua",
+		"body": [
+		"${1:guild}:getMembersOnline()$2"
+	  ],
+	  "description": "Guild:getMembersOnline"
+	},
+	"Guild:addRank": {
+	  "prefix": "addRank",
+		"scope": "lua",
+		"body": [
+		"${1:guild}:addRank(${2:id}, ${3:name}, ${4:level})$5"
+	  ],
+	  "description": "Guild:addRank"
+	},
+	"Guild:getRankById": {
+	  "prefix": "getRankById",
+		"scope": "lua",
+		"body": [
+		"${1:guild}:getRankById(${2:id})$3"
+	  ],
+	  "description": "Guild:getRankById"
+	},
+	"Guild:getRankByLevel": {
+	  "prefix": "getRankByLevel",
+		"scope": "lua",
+		"body": [
+		"${1:guild}:getRankByLevel(${2:level})$3"
+	  ],
+	  "description": "Guild:getRankByLevel"
+	},
+	"Guild:getMotd": {
+	  "prefix": "getMotd",
+		"scope": "lua",
+		"body": [
+		"${1:guild}:getMotd()$2"
+	  ],
+	  "description": "Guild:getMotd"
+	},
+	"Guild:setMotd": {
+	  "prefix": "setMotd",
+		"scope": "lua",
+		"body": [
+		"${1:guild}:setMotd(${2:motd})$3"
+	  ],
+	  "description": "Guild:setMotd"
+	},
+	"House": {
+	  "prefix": "House",
+		"scope": "lua",
+		"body": [
+		"House(${1:id})$2"
+	  ],
+	  "description": "House"
+	},
+	"House:getId": {
+	  "prefix": "getId",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getId()$2"
+	  ],
+	  "description": "House:getId"
+	},
+	"House:getName": {
+	  "prefix": "getName",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getName()$2"
+	  ],
+	  "description": "House:getName"
+	},
+	"House:getTown": {
+	  "prefix": "getTown",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getTown()$2"
+	  ],
+	  "description": "House:getTown"
+	},
+	"House:getExitPosition": {
+	  "prefix": "getExitPosition",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getExitPosition()$2"
+	  ],
+	  "description": "House:getExitPosition"
+	},
+	"House:getRent": {
+	  "prefix": "getRent",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getRent()$2"
+	  ],
+	  "description": "House:getRent"
+	},
+	"House:setRent": {
+	  "prefix": "setRent",
+		"scope": "lua",
+		"body": [
+		"${1:house}:setRent(${2:rent})$3"
+	  ],
+	  "description": "House:setRent"
+	},
+	"House:getPaidUntil": {
+	  "prefix": "getPaidUntil",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getPaidUntil()$2"
+	  ],
+	  "description": "House:getPaidUntil"
+	},
+	"House:setPaidUntil": {
+	  "prefix": "setPaidUntil",
+		"scope": "lua",
+		"body": [
+		"${1:house}:setPaidUntil(${2:timestamp})$3"
+	  ],
+	  "description": "House:setPaidUntil"
+	},
+	"House:getPayRentWarnings": {
+	  "prefix": "getPayRentWarnings",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getPayRentWarnings()$2"
+	  ],
+	  "description": "House:getPayRentWarnings"
+	},
+	"House:setPayRentWarnings": {
+	  "prefix": "setPayRentWarnings",
+		"scope": "lua",
+		"body": [
+		"${1:house}:setPayRentWarnings(${2:warnings})$3"
+	  ],
+	  "description": "House:setPayRentWarnings"
+	},
+	"House:getOwnerName": {
+	  "prefix": "getOwnerName",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getOwnerName()$2"
+	  ],
+	  "description": "House:getOwnerName"
+	},
+	"House:getOwnerGuid": {
+	  "prefix": "getOwnerGuid",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getOwnerGuid()$2"
+	  ],
+	  "description": "House:getOwnerGuid"
+	},
+	"House:setOwnerGuid": {
+	  "prefix": "setOwnerGuid",
+		"scope": "lua",
+		"body": [
+		"${1:house}:setOwnerGuid(${2:guid[}, ${3:updateDatabase = true]})$4"
+	  ],
+	  "description": "House:setOwnerGuid"
+	},
+	"House:startTrade": {
+	  "prefix": "startTrade",
+		"scope": "lua",
+		"body": [
+		"${1:house}:startTrade(${2:player}, ${3:tradePartner})$4"
+	  ],
+	  "description": "House:startTrade"
+	},
+	"House:getBeds": {
+	  "prefix": "getBeds",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getBeds()$2"
+	  ],
+	  "description": "House:getBeds"
+	},
+	"House:getBedCount": {
+	  "prefix": "getBedCount",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getBedCount()$2"
+	  ],
+	  "description": "House:getBedCount"
+	},
+	"House:getDoors": {
+	  "prefix": "getDoors",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getDoors()$2"
+	  ],
+	  "description": "House:getDoors"
+	},
+	"House:getDoorCount": {
+	  "prefix": "getDoorCount",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getDoorCount()$2"
+	  ],
+	  "description": "House:getDoorCount"
+	},
+	"House:getDoorIdByPosition": {
+	  "prefix": "getDoorIdByPosition",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getDoorIdByPosition(${2:position})$3"
+	  ],
+	  "description": "House:getDoorIdByPosition"
+	},
+	"House:getTiles": {
+	  "prefix": "getTiles",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getTiles()$2"
+	  ],
+	  "description": "House:getTiles"
+	},
+	"House:getItems": {
+	  "prefix": "getItems",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getItems()$2"
+	  ],
+	  "description": "House:getItems"
+	},
+	"House:getTileCount": {
+	  "prefix": "getTileCount",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getTileCount()$2"
+	  ],
+	  "description": "House:getTileCount"
+	},
+	"House:canEditAccessList": {
+	  "prefix": "canEditAccessList",
+		"scope": "lua",
+		"body": [
+		"${1:house}:canEditAccessList(${2:listId}, ${3:player})$4"
+	  ],
+	  "description": "House:canEditAccessList"
+	},
+	"House:getAccessList": {
+	  "prefix": "getAccessList",
+		"scope": "lua",
+		"body": [
+		"${1:house}:getAccessList(${2:listId})$3"
+	  ],
+	  "description": "House:getAccessList"
+	},
+	"House:setAccessList": {
+	  "prefix": "setAccessList",
+		"scope": "lua",
+		"body": [
+		"${1:house}:setAccessList(${2:listId}, ${3:list})$4"
+	  ],
+	  "description": "House:setAccessList"
+	},
+	"House:kickPlayer": {
+	  "prefix": "kickPlayer",
+		"scope": "lua",
+		"body": [
+		"${1:house}:kickPlayer(${2:player}, ${3:targetPlayer})$4"
+	  ],
+	  "description": "House:kickPlayer"
+	},
+	"House:save": {
+	  "prefix": "save",
+		"scope": "lua",
+		"body": [
+		"${1:house}:save()$2"
+	  ],
+	  "description": "House:save"
+	},
+	"Item": {
+	  "prefix": "Item",
+		"scope": "lua",
+		"body": [
+		"Item(${1:uid})$2"
+	  ],
+	  "description": "Item"
+	},
+	"Item:isItem": {
+	  "prefix": "isItem",
+		"scope": "lua",
+		"body": [
+		"${1:item}:isItem()$2"
+	  ],
+	  "description": "Item:isItem"
+	},
+	"Item:getParent": {
+	  "prefix": "getParent",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getParent()$2"
+	  ],
+	  "description": "Item:getParent"
+	},
+	"Item:getTopParent": {
+	  "prefix": "getTopParent",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getTopParent()$2"
+	  ],
+	  "description": "Item:getTopParent"
+	},
+	"Item:getId": {
+	  "prefix": "getId",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getId()$2"
+	  ],
+	  "description": "Item:getId"
+	},
+	"Item:clone": {
+	  "prefix": "clone",
+		"scope": "lua",
+		"body": [
+		"${1:item}:clone()$2"
+	  ],
+	  "description": "Item:clone"
+	},
+	"Item:split": {
+	  "prefix": "split",
+		"scope": "lua",
+		"body": [
+		"${1:item}:split(${2:[count = 1]})$3"
+	  ],
+	  "description": "Item:split"
+	},
+	"Item:remove": {
+	  "prefix": "remove",
+		"scope": "lua",
+		"body": [
+		"${1:item}:remove(${2:[count = -1]})$3"
+	  ],
+	  "description": "Item:remove"
+	},
+	"Item:getUniqueId": {
+	  "prefix": "getUniqueId",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getUniqueId()$2"
+	  ],
+	  "description": "Item:getUniqueId"
+	},
+	"Item:getActionId": {
+	  "prefix": "getActionId",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getActionId()$2"
+	  ],
+	  "description": "Item:getActionId"
+	},
+	"Item:setActionId": {
+	  "prefix": "setActionId",
+		"scope": "lua",
+		"body": [
+		"${1:item}:setActionId(${2:actionId})$3"
+	  ],
+	  "description": "Item:setActionId"
+	},
+	"Item:getCount": {
+	  "prefix": "getCount",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getCount()$2"
+	  ],
+	  "description": "Item:getCount"
+	},
+	"Item:getCharges": {
+	  "prefix": "getCharges",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getCharges()$2"
+	  ],
+	  "description": "Item:getCharges"
+	},
+	"Item:getFluidType": {
+	  "prefix": "getFluidType",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getFluidType()$2"
+	  ],
+	  "description": "Item:getFluidType"
+	},
+	"Item:getWeight": {
+	  "prefix": "getWeight",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getWeight()$2"
+	  ],
+	  "description": "Item:getWeight"
+	},
+	"Item:getWorth": {
+	  "prefix": "getWorth",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getWorth()$2"
+	  ],
+	  "description": "Item:getWorth"
+	},
+	"Item:getSubType": {
+	  "prefix": "getSubType",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getSubType()$2"
+	  ],
+	  "description": "Item:getSubType"
+	},
+	"Item:getName": {
+	  "prefix": "getName",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getName()$2"
+	  ],
+	  "description": "Item:getName"
+	},
+	"Item:getPluralName": {
+	  "prefix": "getPluralName",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getPluralName()$2"
+	  ],
+	  "description": "Item:getPluralName"
+	},
+	"Item:getArticle": {
+	  "prefix": "getArticle",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getArticle()$2"
+	  ],
+	  "description": "Item:getArticle"
+	},
+	"Item:getPosition": {
+	  "prefix": "getPosition",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getPosition()$2"
+	  ],
+	  "description": "Item:getPosition"
+	},
+	"Item:getTile": {
+	  "prefix": "getTile",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getTile()$2"
+	  ],
+	  "description": "Item:getTile"
+	},
+	"Item:hasAttribute": {
+	  "prefix": "hasAttribute",
+		"scope": "lua",
+		"body": [
+		"${1:item}:hasAttribute(${2:key})$3"
+	  ],
+	  "description": "Item:hasAttribute"
+	},
+	"Item:getAttribute": {
+	  "prefix": "getAttribute",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getAttribute(${2:key})$3"
+	  ],
+	  "description": "Item:getAttribute"
+	},
+	"Item:setAttribute": {
+	  "prefix": "setAttribute",
+		"scope": "lua",
+		"body": [
+		"${1:item}:setAttribute(${2:key}, ${3:value})$4"
+	  ],
+	  "description": "Item:setAttribute"
+	},
+	"Item:removeAttribute": {
+	  "prefix": "removeAttribute",
+		"scope": "lua",
+		"body": [
+		"${1:item}:removeAttribute(${2:key})$3"
+	  ],
+	  "description": "Item:removeAttribute"
+	},
+	"Item:getCustomAttribute": {
+	  "prefix": "getCustomAttribute",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getCustomAttribute(${2:key})$3"
+	  ],
+	  "description": "Item:getCustomAttribute"
+	},
+	"Item:setCustomAttribute": {
+	  "prefix": "setCustomAttribute",
+		"scope": "lua",
+		"body": [
+		"${1:item}:setCustomAttribute(${2:key}, ${3:value})$4"
+	  ],
+	  "description": "Item:setCustomAttribute"
+	},
+	"Item:removeCustomAttribute": {
+	  "prefix": "removeCustomAttribute",
+		"scope": "lua",
+		"body": [
+		"${1:item}:removeCustomAttribute(${2:key})$3"
+	  ],
+	  "description": "Item:removeCustomAttribute"
+	},
+	"Item:moveTo": {
+	  "prefix": "moveTo",
+		"scope": "lua",
+		"body": [
+		"${1:item}:moveTo(${2:position or cylinder[}, ${3:flags]})$4"
+	  ],
+	  "description": "Item:moveTo"
+	},
+	"Item:transform": {
+	  "prefix": "transform",
+		"scope": "lua",
+		"body": [
+		"${1:item}:transform(${2:itemId[}, ${3:count/subType = -1]})$4"
+	  ],
+	  "description": "Item:transform"
+	},
+	"Item:decay": {
+	  "prefix": "decay",
+		"scope": "lua",
+		"body": [
+		"${1:item}:decay(${2:decayId})$3"
+	  ],
+	  "description": "Item:decay"
+	},
+	"Item:getSpecialDescription": {
+	  "prefix": "getSpecialDescription",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getSpecialDescription()$2"
+	  ],
+	  "description": "Item:getSpecialDescription"
+	},
+	"Item:hasProperty": {
+	  "prefix": "hasProperty",
+		"scope": "lua",
+		"body": [
+		"${1:item}:hasProperty(${2:property})$3"
+	  ],
+	  "description": "Item:hasProperty"
+	},
+	"Item:isLoadedFromMap": {
+	  "prefix": "isLoadedFromMap",
+		"scope": "lua",
+		"body": [
+		"${1:item}:isLoadedFromMap()$2"
+	  ],
+	  "description": "Item:isLoadedFromMap"
+	},
+	"Item:setStoreItem": {
+	  "prefix": "setStoreItem",
+		"scope": "lua",
+		"body": [
+		"${1:item}:setStoreItem(${2:storeItem})$3"
+	  ],
+	  "description": "Item:setStoreItem"
+	},
+	"Item:isStoreItem": {
+	  "prefix": "isStoreItem",
+		"scope": "lua",
+		"body": [
+		"${1:item}:isStoreItem()$2"
+	  ],
+	  "description": "Item:isStoreItem"
+	},
+	"Item:setReflect": {
+	  "prefix": "setReflect",
+		"scope": "lua",
+		"body": [
+		"${1:item}:setReflect(${2:combatType}, ${3:reflect})$4"
+	  ],
+	  "description": "Item:setReflect"
+	},
+	"Item:getReflect": {
+	  "prefix": "getReflect",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getReflect(${2:combatType[}, ${3:total = true]})$4"
+	  ],
+	  "description": "Item:getReflect"
+	},
+	"Item:setBoostPercent": {
+	  "prefix": "setBoostPercent",
+		"scope": "lua",
+		"body": [
+		"${1:item}:setBoostPercent(${2:combatType}, ${3:percent})$4"
+	  ],
+	  "description": "Item:setBoostPercent"
+	},
+	"Item:getBoostPercent": {
+	  "prefix": "getBoostPercent",
+		"scope": "lua",
+		"body": [
+		"${1:item}:getBoostPercent(${2:combatType[}, ${3:total = true]})$4"
+	  ],
+	  "description": "Item:getBoostPercent"
+	},
+	"ItemType": {
+	  "prefix": "ItemType",
+		"scope": "lua",
+		"body": [
+		"ItemType(${1:id or name})$2"
+	  ],
+	  "description": "ItemType"
+	},
+	"Itemtype:isCorpse": {
+	  "prefix": "isCorpse",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isCorpse()$2"
+	  ],
+	  "description": "Itemtype:isCorpse"
+	},
+	"Itemtype:isDoor": {
+	  "prefix": "isDoor",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isDoor()$2"
+	  ],
+	  "description": "Itemtype:isDoor"
+	},
+	"Itemtype:isContainer": {
+	  "prefix": "isContainer",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isContainer()$2"
+	  ],
+	  "description": "Itemtype:isContainer"
+	},
+	"Itemtype:isFluidContainer": {
+	  "prefix": "isFluidContainer",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isFluidContainer()$2"
+	  ],
+	  "description": "Itemtype:isFluidContainer"
+	},
+	"Itemtype:isMovable": {
+	  "prefix": "isMovable",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isMovable()$2"
+	  ],
+	  "description": "Itemtype:isMovable"
+	},
+	"Itemtype:isRune": {
+	  "prefix": "isRune",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isRune()$2"
+	  ],
+	  "description": "Itemtype:isRune"
+	},
+	"Itemtype:isStackable": {
+	  "prefix": "isStackable",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isStackable()$2"
+	  ],
+	  "description": "Itemtype:isStackable"
+	},
+	"Itemtype:isReadable": {
+	  "prefix": "isReadable",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isReadable()$2"
+	  ],
+	  "description": "Itemtype:isReadable"
+	},
+	"Itemtype:isWritable": {
+	  "prefix": "isWritable",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isWritable()$2"
+	  ],
+	  "description": "Itemtype:isWritable"
+	},
+	"Itemtype:isBlocking": {
+	  "prefix": "isBlocking",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isBlocking()$2"
+	  ],
+	  "description": "Itemtype:isBlocking"
+	},
+	"Itemtype:isGroundTile": {
+	  "prefix": "isGroundTile",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isGroundTile()$2"
+	  ],
+	  "description": "Itemtype:isGroundTile"
+	},
+	"Itemtype:isMagicField": {
+	  "prefix": "isMagicField",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isMagicField()$2"
+	  ],
+	  "description": "Itemtype:isMagicField"
+	},
+	"Itemtype:isUseable": {
+	  "prefix": "isUseable",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isUseable()$2"
+	  ],
+	  "description": "Itemtype:isUseable"
+	},
+	"Itemtype:isPickupable": {
+	  "prefix": "isPickupable",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isPickupable()$2"
+	  ],
+	  "description": "Itemtype:isPickupable"
+	},
+	"Itemtype:getType": {
+	  "prefix": "getType",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getType()$2"
+	  ],
+	  "description": "Itemtype:getType"
+	},
+	"Itemtype:getGroup": {
+	  "prefix": "getGroup",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getGroup()$2"
+	  ],
+	  "description": "Itemtype:getGroup"
+	},
+	"Itemtype:getId": {
+	  "prefix": "getId",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getId()$2"
+	  ],
+	  "description": "Itemtype:getId"
+	},
+	"Itemtype:getClientId": {
+	  "prefix": "getClientId",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getClientId()$2"
+	  ],
+	  "description": "Itemtype:getClientId"
+	},
+	"Itemtype:getName": {
+	  "prefix": "getName",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getName()$2"
+	  ],
+	  "description": "Itemtype:getName"
+	},
+	"Itemtype:getPluralName": {
+	  "prefix": "getPluralName",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getPluralName()$2"
+	  ],
+	  "description": "Itemtype:getPluralName"
+	},
+	"Itemtype:getArticle": {
+	  "prefix": "getArticle",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getArticle()$2"
+	  ],
+	  "description": "Itemtype:getArticle"
+	},
+	"Itemtype:getDescription": {
+	  "prefix": "getDescription",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getDescription()$2"
+	  ],
+	  "description": "Itemtype:getDescription"
+	},
+	"Itemtype:getSlotPosition": {
+	  "prefix": "getSlotPosition",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getSlotPosition()$2"
+	  ],
+	  "description": "Itemtype:getSlotPosition"
+	},
+	"Itemtype:getCharges": {
+	  "prefix": "getCharges",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getCharges()$2"
+	  ],
+	  "description": "Itemtype:getCharges"
+	},
+	"Itemtype:getFluidSource": {
+	  "prefix": "getFluidSource",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getFluidSource()$2"
+	  ],
+	  "description": "Itemtype:getFluidSource"
+	},
+	"Itemtype:getCapacity": {
+	  "prefix": "getCapacity",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getCapacity()$2"
+	  ],
+	  "description": "Itemtype:getCapacity"
+	},
+	"Itemtype:getWeight": {
+	  "prefix": "getWeight",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getWeight(${2:[count = 1]})$3"
+	  ],
+	  "description": "Itemtype:getWeight"
+	},
+	"Itemtype:getWorth": {
+	  "prefix": "getWorth",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getWorth()$2"
+	  ],
+	  "description": "Itemtype:getWorth"
+	},
+	"Itemtype:getHitChance": {
+	  "prefix": "getHitChance",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getHitChance()$2"
+	  ],
+	  "description": "Itemtype:getHitChance"
+	},
+	"Itemtype:getShootRange": {
+	  "prefix": "getShootRange",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getShootRange()$2"
+	  ],
+	  "description": "Itemtype:getShootRange"
+	},
+	"Itemtype:getAttack": {
+	  "prefix": "getAttack",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getAttack()$2"
+	  ],
+	  "description": "Itemtype:getAttack"
+	},
+	"Itemtype:getAttackSpeed": {
+	  "prefix": "getAttackSpeed",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getAttackSpeed()$2"
+	  ],
+	  "description": "Itemtype:getAttackSpeed"
+	},
+	"Itemtype:getDefense": {
+	  "prefix": "getDefense",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getDefense()$2"
+	  ],
+	  "description": "Itemtype:getDefense"
+	},
+	"Itemtype:getExtraDefense": {
+	  "prefix": "getExtraDefense",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getExtraDefense()$2"
+	  ],
+	  "description": "Itemtype:getExtraDefense"
+	},
+	"Itemtype:getArmor": {
+	  "prefix": "getArmor",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getArmor()$2"
+	  ],
+	  "description": "Itemtype:getArmor"
+	},
+	"Itemtype:getWeaponType": {
+	  "prefix": "getWeaponType",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getWeaponType()$2"
+	  ],
+	  "description": "Itemtype:getWeaponType"
+	},
+	"Itemtype:getAmmoType": {
+	  "prefix": "getAmmoType",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getAmmoType()$2"
+	  ],
+	  "description": "Itemtype:getAmmoType"
+	},
+	"Itemtype:getCorpseType": {
+	  "prefix": "getCorpseType",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getCorpseType()$2"
+	  ],
+	  "description": "Itemtype:getCorpseType"
+	},
+	"Itemtype:getClassification": {
+	  "prefix": "getClassification",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getClassification()$2"
+	  ],
+	  "description": "Itemtype:getClassification"
+	},
+	"Itemtype:getAbilities": {
+	  "prefix": "getAbilities",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getAbilities()$2"
+	  ],
+	  "description": "Itemtype:getAbilities"
+	},
+	"Itemtype:hasShowAttributes": {
+	  "prefix": "hasShowAttributes",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:hasShowAttributes()$2"
+	  ],
+	  "description": "Itemtype:hasShowAttributes"
+	},
+	"Itemtype:hasShowCount": {
+	  "prefix": "hasShowCount",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:hasShowCount()$2"
+	  ],
+	  "description": "Itemtype:hasShowCount"
+	},
+	"Itemtype:hasShowCharges": {
+	  "prefix": "hasShowCharges",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:hasShowCharges()$2"
+	  ],
+	  "description": "Itemtype:hasShowCharges"
+	},
+	"Itemtype:hasShowDuration": {
+	  "prefix": "hasShowDuration",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:hasShowDuration()$2"
+	  ],
+	  "description": "Itemtype:hasShowDuration"
+	},
+	"Itemtype:hasAllowDistRead": {
+	  "prefix": "hasAllowDistRead",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:hasAllowDistRead()$2"
+	  ],
+	  "description": "Itemtype:hasAllowDistRead"
+	},
+	"Itemtype:getWieldInfo": {
+	  "prefix": "getWieldInfo",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getWieldInfo()$2"
+	  ],
+	  "description": "Itemtype:getWieldInfo"
+	},
+	"Itemtype:getDuration": {
+	  "prefix": "getDuration",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getDuration()$2"
+	  ],
+	  "description": "Itemtype:getDuration"
+	},
+	"Itemtype:getLevelDoor": {
+	  "prefix": "getLevelDoor",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getLevelDoor()$2"
+	  ],
+	  "description": "Itemtype:getLevelDoor"
+	},
+	"Itemtype:getRuneSpellName": {
+	  "prefix": "getRuneSpellName",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getRuneSpellName()$2"
+	  ],
+	  "description": "Itemtype:getRuneSpellName"
+	},
+	"Itemtype:getVocationString": {
+	  "prefix": "getVocationString",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getVocationString()$2"
+	  ],
+	  "description": "Itemtype:getVocationString"
+	},
+	"Itemtype:getMinReqLevel": {
+	  "prefix": "getMinReqLevel",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getMinReqLevel()$2"
+	  ],
+	  "description": "Itemtype:getMinReqLevel"
+	},
+	"Itemtype:getMinReqMagicLevel": {
+	  "prefix": "getMinReqMagicLevel",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getMinReqMagicLevel()$2"
+	  ],
+	  "description": "Itemtype:getMinReqMagicLevel"
+	},
+	"Itemtype:getMarketBuyStatistics": {
+	  "prefix": "getMarketBuyStatistics",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getMarketBuyStatistics()$2"
+	  ],
+	  "description": "Itemtype:getMarketBuyStatistics"
+	},
+	"Itemtype:getMarketSellStatistics": {
+	  "prefix": "getMarketSellStatistics",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getMarketSellStatistics()$2"
+	  ],
+	  "description": "Itemtype:getMarketSellStatistics"
+	},
+	"Itemtype:getElementType": {
+	  "prefix": "getElementType",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getElementType()$2"
+	  ],
+	  "description": "Itemtype:getElementType"
+	},
+	"Itemtype:getElementDamage": {
+	  "prefix": "getElementDamage",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getElementDamage()$2"
+	  ],
+	  "description": "Itemtype:getElementDamage"
+	},
+	"Itemtype:getTransformEquipId": {
+	  "prefix": "getTransformEquipId",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getTransformEquipId()$2"
+	  ],
+	  "description": "Itemtype:getTransformEquipId"
+	},
+	"Itemtype:getTransformDeEquipId": {
+	  "prefix": "getTransformDeEquipId",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getTransformDeEquipId()$2"
+	  ],
+	  "description": "Itemtype:getTransformDeEquipId"
+	},
+	"Itemtype:getDestroyId": {
+	  "prefix": "getDestroyId",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getDestroyId()$2"
+	  ],
+	  "description": "Itemtype:getDestroyId"
+	},
+	"Itemtype:getDecayId": {
+	  "prefix": "getDecayId",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getDecayId()$2"
+	  ],
+	  "description": "Itemtype:getDecayId"
+	},
+	"Itemtype:getRequiredLevel": {
+	  "prefix": "getRequiredLevel",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:getRequiredLevel()$2"
+	  ],
+	  "description": "Itemtype:getRequiredLevel"
+	},
+	"Itemtype:hasSubType": {
+	  "prefix": "hasSubType",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:hasSubType()$2"
+	  ],
+	  "description": "Itemtype:hasSubType"
+	},
+	"Itemtype:isStoreItem": {
+	  "prefix": "isStoreItem",
+		"scope": "lua",
+		"body": [
+		"${1:itemtype}:isStoreItem()$2"
+	  ],
+	  "description": "Itemtype:isStoreItem"
+	},
+	"Loot": {
+	  "prefix": "Loot",
+		"scope": "lua",
+		"body": [
+		"Loot()$1"
+	  ],
+	  "description": "Loot"
+	},
+	"Loot:delete": {
+	  "prefix": "delete",
+		"scope": "lua",
+		"body": [
+		"${1:loot}:delete()$2"
+	  ],
+	  "description": "Loot:delete"
+	},
+	"Loot:__gc": {
+	  "prefix": "__gc",
+		"scope": "lua",
+		"body": [
+		"${1:loot}:__gc()$2"
+	  ],
+	  "description": "Loot:__gc"
+	},
+	"Loot:setId": {
+	  "prefix": "setId",
+		"scope": "lua",
+		"body": [
+		"${1:loot}:setId(${2:id or name})$3"
+	  ],
+	  "description": "Loot:setId"
+	},
+	"Loot:setSubType": {
+	  "prefix": "setSubType",
+		"scope": "lua",
+		"body": [
+		"${1:loot}:setSubType(${2:type})$3"
+	  ],
+	  "description": "Loot:setSubType"
+	},
+	"Loot:setChance": {
+	  "prefix": "setChance",
+		"scope": "lua",
+		"body": [
+		"${1:loot}:setChance(${2:chance})$3"
+	  ],
+	  "description": "Loot:setChance"
+	},
+	"Loot:setMaxCount": {
+	  "prefix": "setMaxCount",
+		"scope": "lua",
+		"body": [
+		"${1:loot}:setMaxCount(${2:max})$3"
+	  ],
+	  "description": "Loot:setMaxCount"
+	},
+	"Loot:setActionId": {
+	  "prefix": "setActionId",
+		"scope": "lua",
+		"body": [
+		"${1:loot}:setActionId(${2:actionid})$3"
+	  ],
+	  "description": "Loot:setActionId"
+	},
+	"Loot:setDescription": {
+	  "prefix": "setDescription",
+		"scope": "lua",
+		"body": [
+		"${1:loot}:setDescription(${2:desc})$3"
+	  ],
+	  "description": "Loot:setDescription"
+	},
+	"Loot:addChildLoot": {
+	  "prefix": "addChildLoot",
+		"scope": "lua",
+		"body": [
+		"${1:loot}:addChildLoot(${2:loot})$3"
+	  ],
+	  "description": "Loot:addChildLoot"
+	},
+	"ModalWindow": {
+	  "prefix": "ModalWindow",
+		"scope": "lua",
+		"body": [
+		"ModalWindow(${1:id}, ${2:title}, ${3:message})$4"
+	  ],
+	  "description": "ModalWindow"
+	},
+	"Modalwindow:getId": {
+	  "prefix": "getId",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:getId()$2"
+	  ],
+	  "description": "Modalwindow:getId"
+	},
+	"Modalwindow:getTitle": {
+	  "prefix": "getTitle",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:getTitle()$2"
+	  ],
+	  "description": "Modalwindow:getTitle"
+	},
+	"Modalwindow:getMessage": {
+	  "prefix": "getMessage",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:getMessage()$2"
+	  ],
+	  "description": "Modalwindow:getMessage"
+	},
+	"Modalwindow:setTitle": {
+	  "prefix": "setTitle",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:setTitle(${2:text})$3"
+	  ],
+	  "description": "Modalwindow:setTitle"
+	},
+	"Modalwindow:setMessage": {
+	  "prefix": "setMessage",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:setMessage(${2:text})$3"
+	  ],
+	  "description": "Modalwindow:setMessage"
+	},
+	"Modalwindow:getButtonCount": {
+	  "prefix": "getButtonCount",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:getButtonCount()$2"
+	  ],
+	  "description": "Modalwindow:getButtonCount"
+	},
+	"Modalwindow:getChoiceCount": {
+	  "prefix": "getChoiceCount",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:getChoiceCount()$2"
+	  ],
+	  "description": "Modalwindow:getChoiceCount"
+	},
+	"Modalwindow:addButton": {
+	  "prefix": "addButton",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:addButton(${2:id}, ${3:text})$4"
+	  ],
+	  "description": "Modalwindow:addButton"
+	},
+	"Modalwindow:addChoice": {
+	  "prefix": "addChoice",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:addChoice(${2:id}, ${3:text})$4"
+	  ],
+	  "description": "Modalwindow:addChoice"
+	},
+	"Modalwindow:getDefaultEnterButton": {
+	  "prefix": "getDefaultEnterButton",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:getDefaultEnterButton()$2"
+	  ],
+	  "description": "Modalwindow:getDefaultEnterButton"
+	},
+	"Modalwindow:setDefaultEnterButton": {
+	  "prefix": "setDefaultEnterButton",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:setDefaultEnterButton(${2:buttonId})$3"
+	  ],
+	  "description": "Modalwindow:setDefaultEnterButton"
+	},
+	"Modalwindow:getDefaultEscapeButton": {
+	  "prefix": "getDefaultEscapeButton",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:getDefaultEscapeButton()$2"
+	  ],
+	  "description": "Modalwindow:getDefaultEscapeButton"
+	},
+	"Modalwindow:setDefaultEscapeButton": {
+	  "prefix": "setDefaultEscapeButton",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:setDefaultEscapeButton(${2:buttonId})$3"
+	  ],
+	  "description": "Modalwindow:setDefaultEscapeButton"
+	},
+	"Modalwindow:hasPriority": {
+	  "prefix": "hasPriority",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:hasPriority()$2"
+	  ],
+	  "description": "Modalwindow:hasPriority"
+	},
+	"Modalwindow:setPriority": {
+	  "prefix": "setPriority",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:setPriority(${2:priority})$3"
+	  ],
+	  "description": "Modalwindow:setPriority"
+	},
+	"Modalwindow:sendToPlayer": {
+	  "prefix": "sendToPlayer",
+		"scope": "lua",
+		"body": [
+		"${1:modalwindow}:sendToPlayer(${2:player})$3"
+	  ],
+	  "description": "Modalwindow:sendToPlayer"
+	},
+	"Monster": {
+	  "prefix": "Monster",
+		"scope": "lua",
+		"body": [
+		"Monster(${1:id or userdata})$2"
+	  ],
+	  "description": "Monster"
+	},
+	"Monster:isMonster": {
+	  "prefix": "isMonster",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:isMonster()$2"
+	  ],
+	  "description": "Monster:isMonster"
+	},
+	"Monster:getType": {
+	  "prefix": "getType",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:getType()$2"
+	  ],
+	  "description": "Monster:getType"
+	},
+	"Monster:rename": {
+	  "prefix": "rename",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:rename(${2:name[}, ${3:nameDescription]})$4"
+	  ],
+	  "description": "Monster:rename"
+	},
+	"Monster:getSpawnPosition": {
+	  "prefix": "getSpawnPosition",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:getSpawnPosition()$2"
+	  ],
+	  "description": "Monster:getSpawnPosition"
+	},
+	"Monster:isInSpawnRange": {
+	  "prefix": "isInSpawnRange",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:isInSpawnRange(${2:[position]})$3"
+	  ],
+	  "description": "Monster:isInSpawnRange"
+	},
+	"Monster:isIdle": {
+	  "prefix": "isIdle",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:isIdle()$2"
+	  ],
+	  "description": "Monster:isIdle"
+	},
+	"Monster:setIdle": {
+	  "prefix": "setIdle",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:setIdle(${2:idle})$3"
+	  ],
+	  "description": "Monster:setIdle"
+	},
+	"Monster:isTarget": {
+	  "prefix": "isTarget",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:isTarget(${2:creature})$3"
+	  ],
+	  "description": "Monster:isTarget"
+	},
+	"Monster:isOpponent": {
+	  "prefix": "isOpponent",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:isOpponent(${2:creature})$3"
+	  ],
+	  "description": "Monster:isOpponent"
+	},
+	"Monster:isFriend": {
+	  "prefix": "isFriend",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:isFriend(${2:creature})$3"
+	  ],
+	  "description": "Monster:isFriend"
+	},
+	"Monster:addFriend": {
+	  "prefix": "addFriend",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:addFriend(${2:creature})$3"
+	  ],
+	  "description": "Monster:addFriend"
+	},
+	"Monster:removeFriend": {
+	  "prefix": "removeFriend",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:removeFriend(${2:creature})$3"
+	  ],
+	  "description": "Monster:removeFriend"
+	},
+	"Monster:getFriendList": {
+	  "prefix": "getFriendList",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:getFriendList()$2"
+	  ],
+	  "description": "Monster:getFriendList"
+	},
+	"Monster:getFriendCount": {
+	  "prefix": "getFriendCount",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:getFriendCount()$2"
+	  ],
+	  "description": "Monster:getFriendCount"
+	},
+	"Monster:addTarget": {
+	  "prefix": "addTarget",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:addTarget(${2:creature[}, ${3:pushFront = false]})$4"
+	  ],
+	  "description": "Monster:addTarget"
+	},
+	"Monster:removeTarget": {
+	  "prefix": "removeTarget",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:removeTarget(${2:creature})$3"
+	  ],
+	  "description": "Monster:removeTarget"
+	},
+	"Monster:getTargetList": {
+	  "prefix": "getTargetList",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:getTargetList()$2"
+	  ],
+	  "description": "Monster:getTargetList"
+	},
+	"Monster:getTargetCount": {
+	  "prefix": "getTargetCount",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:getTargetCount()$2"
+	  ],
+	  "description": "Monster:getTargetCount"
+	},
+	"Monster:selectTarget": {
+	  "prefix": "selectTarget",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:selectTarget(${2:creature})$3"
+	  ],
+	  "description": "Monster:selectTarget"
+	},
+	"Monster:searchTarget": {
+	  "prefix": "searchTarget",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:searchTarget(${2:[searchType = TARGETSEARCH_DEFAULT]})$3"
+	  ],
+	  "description": "Monster:searchTarget"
+	},
+	"Monster:isWalkingToSpawn": {
+	  "prefix": "isWalkingToSpawn",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:isWalkingToSpawn()$2"
+	  ],
+	  "description": "Monster:isWalkingToSpawn"
+	},
+	"Monster:walkToSpawn": {
+	  "prefix": "walkToSpawn",
+		"scope": "lua",
+		"body": [
+		"${1:monster}:walkToSpawn()$2"
+	  ],
+	  "description": "Monster:walkToSpawn"
+	},
+	"MonsterSpell": {
+	  "prefix": "MonsterSpell",
+		"scope": "lua",
+		"body": [
+		"MonsterSpell()$1"
+	  ],
+	  "description": "MonsterSpell"
+	},
+	"Monsterspell:delete": {
+	  "prefix": "delete",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:delete()$2"
+	  ],
+	  "description": "Monsterspell:delete"
+	},
+	"Monsterspell:__gc": {
+	  "prefix": "__gc",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:__gc()$2"
+	  ],
+	  "description": "Monsterspell:__gc"
+	},
+	"Monsterspell:setType": {
+	  "prefix": "setType",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setType(${2:type})$3"
+	  ],
+	  "description": "Monsterspell:setType"
+	},
+	"Monsterspell:setScriptName": {
+	  "prefix": "setScriptName",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setScriptName(${2:name})$3"
+	  ],
+	  "description": "Monsterspell:setScriptName"
+	},
+	"Monsterspell:setChance": {
+	  "prefix": "setChance",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setChance(${2:chance})$3"
+	  ],
+	  "description": "Monsterspell:setChance"
+	},
+	"Monsterspell:setInterval": {
+	  "prefix": "setInterval",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setInterval(${2:interval})$3"
+	  ],
+	  "description": "Monsterspell:setInterval"
+	},
+	"Monsterspell:setRange": {
+	  "prefix": "setRange",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setRange(${2:range})$3"
+	  ],
+	  "description": "Monsterspell:setRange"
+	},
+	"Monsterspell:setCombatValue": {
+	  "prefix": "setCombatValue",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setCombatValue(${2:min}, ${3:max})$4"
+	  ],
+	  "description": "Monsterspell:setCombatValue"
+	},
+	"Monsterspell:setCombatType": {
+	  "prefix": "setCombatType",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setCombatType(${2:combatType_t})$3"
+	  ],
+	  "description": "Monsterspell:setCombatType"
+	},
+	"Monsterspell:setAttackValue": {
+	  "prefix": "setAttackValue",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setAttackValue(${2:attack}, ${3:skill})$4"
+	  ],
+	  "description": "Monsterspell:setAttackValue"
+	},
+	"Monsterspell:setNeedTarget": {
+	  "prefix": "setNeedTarget",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setNeedTarget(${2:bool})$3"
+	  ],
+	  "description": "Monsterspell:setNeedTarget"
+	},
+	"Monsterspell:setNeedDirection": {
+	  "prefix": "setNeedDirection",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setNeedDirection(${2:bool})$3"
+	  ],
+	  "description": "Monsterspell:setNeedDirection"
+	},
+	"Monsterspell:setCombatLength": {
+	  "prefix": "setCombatLength",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setCombatLength(${2:length})$3"
+	  ],
+	  "description": "Monsterspell:setCombatLength"
+	},
+	"Monsterspell:setCombatSpread": {
+	  "prefix": "setCombatSpread",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setCombatSpread(${2:spread})$3"
+	  ],
+	  "description": "Monsterspell:setCombatSpread"
+	},
+	"Monsterspell:setCombatRadius": {
+	  "prefix": "setCombatRadius",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setCombatRadius(${2:radius})$3"
+	  ],
+	  "description": "Monsterspell:setCombatRadius"
+	},
+	"Monsterspell:setCombatRing": {
+	  "prefix": "setCombatRing",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setCombatRing(${2:ring})$3"
+	  ],
+	  "description": "Monsterspell:setCombatRing"
+	},
+	"Monsterspell:setConditionType": {
+	  "prefix": "setConditionType",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setConditionType(${2:type})$3"
+	  ],
+	  "description": "Monsterspell:setConditionType"
+	},
+	"Monsterspell:setConditionDamage": {
+	  "prefix": "setConditionDamage",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setConditionDamage(${2:min}, ${3:max}, ${4:start})$5"
+	  ],
+	  "description": "Monsterspell:setConditionDamage"
+	},
+	"Monsterspell:setConditionSpeedChange": {
+	  "prefix": "setConditionSpeedChange",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setConditionSpeedChange(${2:minSpeed[}, ${3:maxSpeed]})$4"
+	  ],
+	  "description": "Monsterspell:setConditionSpeedChange"
+	},
+	"Monsterspell:setConditionDuration": {
+	  "prefix": "setConditionDuration",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setConditionDuration(${2:duration})$3"
+	  ],
+	  "description": "Monsterspell:setConditionDuration"
+	},
+	"Monsterspell:setConditionDrunkenness": {
+	  "prefix": "setConditionDrunkenness",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setConditionDrunkenness(${2:drunkenness})$3"
+	  ],
+	  "description": "Monsterspell:setConditionDrunkenness"
+	},
+	"Monsterspell:setConditionTickInterval": {
+	  "prefix": "setConditionTickInterval",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setConditionTickInterval(${2:interval})$3"
+	  ],
+	  "description": "Monsterspell:setConditionTickInterval"
+	},
+	"Monsterspell:setCombatShootEffect": {
+	  "prefix": "setCombatShootEffect",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setCombatShootEffect(${2:effect})$3"
+	  ],
+	  "description": "Monsterspell:setCombatShootEffect"
+	},
+	"Monsterspell:setCombatEffect": {
+	  "prefix": "setCombatEffect",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setCombatEffect(${2:effect})$3"
+	  ],
+	  "description": "Monsterspell:setCombatEffect"
+	},
+	"Monsterspell:setOutfit": {
+	  "prefix": "setOutfit",
+		"scope": "lua",
+		"body": [
+		"${1:monsterspell}:setOutfit(${2:outfit})$3"
+	  ],
+	  "description": "Monsterspell:setOutfit"
+	},
+	"MonsterType": {
+	  "prefix": "MonsterType",
+		"scope": "lua",
+		"body": [
+		"MonsterType(${1:name})$2"
+	  ],
+	  "description": "MonsterType"
+	},
+	"Monstertype:isAttackable": {
+	  "prefix": "isAttackable",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:isAttackable(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:isAttackable"
+	},
+	"Monstertype:isChallengeable": {
+	  "prefix": "isChallengeable",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:isChallengeable(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:isChallengeable"
+	},
+	"Monstertype:isConvinceable": {
+	  "prefix": "isConvinceable",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:isConvinceable(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:isConvinceable"
+	},
+	"Monstertype:isSummonable": {
+	  "prefix": "isSummonable",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:isSummonable(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:isSummonable"
+	},
+	"Monstertype:isIgnoringSpawnBlock": {
+	  "prefix": "isIgnoringSpawnBlock",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:isIgnoringSpawnBlock(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:isIgnoringSpawnBlock"
+	},
+	"Monstertype:isIllusionable": {
+	  "prefix": "isIllusionable",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:isIllusionable(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:isIllusionable"
+	},
+	"Monstertype:isHostile": {
+	  "prefix": "isHostile",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:isHostile(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:isHostile"
+	},
+	"Monstertype:isPushable": {
+	  "prefix": "isPushable",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:isPushable(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:isPushable"
+	},
+	"Monstertype:isHealthHidden": {
+	  "prefix": "isHealthHidden",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:isHealthHidden(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:isHealthHidden"
+	},
+	"Monstertype:isBoss": {
+	  "prefix": "isBoss",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:isBoss(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:isBoss"
+	},
+	"Monstertype:canPushItems": {
+	  "prefix": "canPushItems",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:canPushItems(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:canPushItems"
+	},
+	"Monstertype:canPushCreatures": {
+	  "prefix": "canPushCreatures",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:canPushCreatures(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:canPushCreatures"
+	},
+	"Monstertype:canWalkOnEnergy": {
+	  "prefix": "canWalkOnEnergy",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:canWalkOnEnergy(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:canWalkOnEnergy"
+	},
+	"Monstertype:canWalkOnFire": {
+	  "prefix": "canWalkOnFire",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:canWalkOnFire(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:canWalkOnFire"
+	},
+	"Monstertype:canWalkOnPoison": {
+	  "prefix": "canWalkOnPoison",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:canWalkOnPoison(${2:bool})$3"
+	  ],
+	  "description": "Monstertype:canWalkOnPoison"
+	},
+	"Monstertype:name": {
+	  "prefix": "name",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:name(${2:name})$3"
+	  ],
+	  "description": "Monstertype:name"
+	},
+	"Monstertype:nameDescription": {
+	  "prefix": "nameDescription",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:nameDescription(${2:desc})$3"
+	  ],
+	  "description": "Monstertype:nameDescription"
+	},
+	"Monstertype:health": {
+	  "prefix": "health",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:health(${2:health})$3"
+	  ],
+	  "description": "Monstertype:health"
+	},
+	"Monstertype:maxHealth": {
+	  "prefix": "maxHealth",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:maxHealth(${2:health})$3"
+	  ],
+	  "description": "Monstertype:maxHealth"
+	},
+	"Monstertype:runHealth": {
+	  "prefix": "runHealth",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:runHealth(${2:health})$3"
+	  ],
+	  "description": "Monstertype:runHealth"
+	},
+	"Monstertype:experience": {
+	  "prefix": "experience",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:experience(${2:exp})$3"
+	  ],
+	  "description": "Monstertype:experience"
+	},
+	"Monstertype:skull": {
+	  "prefix": "skull",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:skull(${2:str/constant})$3"
+	  ],
+	  "description": "Monstertype:skull"
+	},
+	"Monstertype:combatImmunities": {
+	  "prefix": "combatImmunities",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:combatImmunities(${2:immunity})$3"
+	  ],
+	  "description": "Monstertype:combatImmunities"
+	},
+	"Monstertype:conditionImmunities": {
+	  "prefix": "conditionImmunities",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:conditionImmunities(${2:immunity})$3"
+	  ],
+	  "description": "Monstertype:conditionImmunities"
+	},
+	"Monstertype:getAttackList": {
+	  "prefix": "getAttackList",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:getAttackList()$2"
+	  ],
+	  "description": "Monstertype:getAttackList"
+	},
+	"Monstertype:addAttack": {
+	  "prefix": "addAttack",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:addAttack(${2:monsterspell})$3"
+	  ],
+	  "description": "Monstertype:addAttack"
+	},
+	"Monstertype:getDefenseList": {
+	  "prefix": "getDefenseList",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:getDefenseList()$2"
+	  ],
+	  "description": "Monstertype:getDefenseList"
+	},
+	"Monstertype:addDefense": {
+	  "prefix": "addDefense",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:addDefense(${2:monsterspell})$3"
+	  ],
+	  "description": "Monstertype:addDefense"
+	},
+	"Monstertype:getElementList": {
+	  "prefix": "getElementList",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:getElementList()$2"
+	  ],
+	  "description": "Monstertype:getElementList"
+	},
+	"Monstertype:addElement": {
+	  "prefix": "addElement",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:addElement(${2:type}, ${3:percent})$4"
+	  ],
+	  "description": "Monstertype:addElement"
+	},
+	"Monstertype:getVoices": {
+	  "prefix": "getVoices",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:getVoices()$2"
+	  ],
+	  "description": "Monstertype:getVoices"
+	},
+	"Monstertype:addVoice": {
+	  "prefix": "addVoice",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:addVoice(${2:sentence}, ${3:interval}, ${4:chance}, ${5:yell})$6"
+	  ],
+	  "description": "Monstertype:addVoice"
+	},
+	"Monstertype:getLoot": {
+	  "prefix": "getLoot",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:getLoot()$2"
+	  ],
+	  "description": "Monstertype:getLoot"
+	},
+	"Monstertype:addLoot": {
+	  "prefix": "addLoot",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:addLoot(${2:loot})$3"
+	  ],
+	  "description": "Monstertype:addLoot"
+	},
+	"Monstertype:getCreatureEvents": {
+	  "prefix": "getCreatureEvents",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:getCreatureEvents()$2"
+	  ],
+	  "description": "Monstertype:getCreatureEvents"
+	},
+	"Monstertype:registerEvent": {
+	  "prefix": "registerEvent",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:registerEvent(${2:name})$3"
+	  ],
+	  "description": "Monstertype:registerEvent"
+	},
+	"Monstertype:onThink": {
+	  "prefix": "onThink",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:onThink(${2:callback})$3"
+	  ],
+	  "description": "Monstertype:onThink"
+	},
+	"Monstertype:onAppear": {
+	  "prefix": "onAppear",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:onAppear(${2:callback})$3"
+	  ],
+	  "description": "Monstertype:onAppear"
+	},
+	"Monstertype:onDisappear": {
+	  "prefix": "onDisappear",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:onDisappear(${2:callback})$3"
+	  ],
+	  "description": "Monstertype:onDisappear"
+	},
+	"Monstertype:onMove": {
+	  "prefix": "onMove",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:onMove(${2:callback})$3"
+	  ],
+	  "description": "Monstertype:onMove"
+	},
+	"Monstertype:onSay": {
+	  "prefix": "onSay",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:onSay(${2:callback})$3"
+	  ],
+	  "description": "Monstertype:onSay"
+	},
+	"Monstertype:eventType": {
+	  "prefix": "eventType",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:eventType(${2:event})$3"
+	  ],
+	  "description": "Monstertype:eventType"
+	},
+	"Monstertype:getSummonList": {
+	  "prefix": "getSummonList",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:getSummonList()$2"
+	  ],
+	  "description": "Monstertype:getSummonList"
+	},
+	"Monstertype:addSummon": {
+	  "prefix": "addSummon",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:addSummon(${2:name}, ${3:interval}, ${4:chance[}, ${5:max = -1]})$6"
+	  ],
+	  "description": "Monstertype:addSummon"
+	},
+	"Monstertype:maxSummons": {
+	  "prefix": "maxSummons",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:maxSummons(${2:ammount})$3"
+	  ],
+	  "description": "Monstertype:maxSummons"
+	},
+	"Monstertype:armor": {
+	  "prefix": "armor",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:armor(${2:armor})$3"
+	  ],
+	  "description": "Monstertype:armor"
+	},
+	"Monstertype:defense": {
+	  "prefix": "defense",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:defense(${2:defense})$3"
+	  ],
+	  "description": "Monstertype:defense"
+	},
+	"Monstertype:outfit": {
+	  "prefix": "outfit",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:outfit(${2:outfit})$3"
+	  ],
+	  "description": "Monstertype:outfit"
+	},
+	"Monstertype:race": {
+	  "prefix": "race",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:race(${2:race})$3"
+	  ],
+	  "description": "Monstertype:race"
+	},
+	"Monstertype:corpseId": {
+	  "prefix": "corpseId",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:corpseId(${2:id})$3"
+	  ],
+	  "description": "Monstertype:corpseId"
+	},
+	"Monstertype:manaCost": {
+	  "prefix": "manaCost",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:manaCost(${2:mana})$3"
+	  ],
+	  "description": "Monstertype:manaCost"
+	},
+	"Monstertype:baseSpeed": {
+	  "prefix": "baseSpeed",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:baseSpeed(${2:speed})$3"
+	  ],
+	  "description": "Monstertype:baseSpeed"
+	},
+	"Monstertype:light": {
+	  "prefix": "light",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:light(${2:color}, ${3:level})$4"
+	  ],
+	  "description": "Monstertype:light"
+	},
+	"Monstertype:staticAttackChance": {
+	  "prefix": "staticAttackChance",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:staticAttackChance(${2:chance})$3"
+	  ],
+	  "description": "Monstertype:staticAttackChance"
+	},
+	"Monstertype:targetDistance": {
+	  "prefix": "targetDistance",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:targetDistance(${2:distance})$3"
+	  ],
+	  "description": "Monstertype:targetDistance"
+	},
+	"Monstertype:yellChance": {
+	  "prefix": "yellChance",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:yellChance(${2:chance})$3"
+	  ],
+	  "description": "Monstertype:yellChance"
+	},
+	"Monstertype:yellSpeedTicks": {
+	  "prefix": "yellSpeedTicks",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:yellSpeedTicks(${2:rate})$3"
+	  ],
+	  "description": "Monstertype:yellSpeedTicks"
+	},
+	"Monstertype:changeTargetChance": {
+	  "prefix": "changeTargetChance",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:changeTargetChance(${2:chance})$3"
+	  ],
+	  "description": "Monstertype:changeTargetChance"
+	},
+	"Monstertype:changeTargetSpeed": {
+	  "prefix": "changeTargetSpeed",
+		"scope": "lua",
+		"body": [
+		"${1:monstertype}:changeTargetSpeed(${2:speed})$3"
+	  ],
+	  "description": "Monstertype:changeTargetSpeed"
+	},
+	"MoveEvent": {
+	  "prefix": "MoveEvent",
+		"scope": "lua",
+		"body": [
+		"MoveEvent()$1"
+	  ],
+	  "description": "MoveEvent"
+	},
+	"Moveevent:type": {
+	  "prefix": "type",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:type(${2:callback})$3"
+	  ],
+	  "description": "Moveevent:type"
+	},
+	"Moveevent:register": {
+	  "prefix": "register",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:register()$2"
+	  ],
+	  "description": "Moveevent:register"
+	},
+	"Moveevent:slot": {
+	  "prefix": "slot",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:slot(${2:slot})$3"
+	  ],
+	  "description": "Moveevent:slot"
+	},
+	"Moveevent:level": {
+	  "prefix": "level",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:level(${2:lvl})$3"
+	  ],
+	  "description": "Moveevent:level"
+	},
+	"Moveevent:magicLevel": {
+	  "prefix": "magicLevel",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:magicLevel(${2:lvl})$3"
+	  ],
+	  "description": "Moveevent:magicLevel"
+	},
+	"Moveevent:premium": {
+	  "prefix": "premium",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:premium(${2:bool})$3"
+	  ],
+	  "description": "Moveevent:premium"
+	},
+	"Moveevent:vocation": {
+	  "prefix": "vocation",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:vocation(${2:vocName[}, ${3:showInDescription = false}, ${4:lastVoc = false]})$5"
+	  ],
+	  "description": "Moveevent:vocation"
+	},
+	"Moveevent:tileItem": {
+	  "prefix": "tileItem",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:tileItem(${2:bool})$3"
+	  ],
+	  "description": "Moveevent:tileItem"
+	},
+	"Moveevent:id": {
+	  "prefix": "id",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:id(${2:ids})$3"
+	  ],
+	  "description": "Moveevent:id"
+	},
+	"Moveevent:aid": {
+	  "prefix": "aid",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:aid(${2:ids})$3"
+	  ],
+	  "description": "Moveevent:aid"
+	},
+	"Moveevent:uid": {
+	  "prefix": "uid",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:uid(${2:ids})$3"
+	  ],
+	  "description": "Moveevent:uid"
+	},
+	"Moveevent:position": {
+	  "prefix": "position",
+		"scope": "lua",
+		"body": [
+		"${1:moveevent}:position(${2:positions})$3"
+	  ],
+	  "description": "Moveevent:position"
+	},
+	"NetworkMessage": {
+	  "prefix": "NetworkMessage",
+		"scope": "lua",
+		"body": [
+		"NetworkMessage()$1"
+	  ],
+	  "description": "NetworkMessage"
+	},
+	"Networkmessage:getByte": {
+	  "prefix": "getByte",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:getByte()$2"
+	  ],
+	  "description": "Networkmessage:getByte"
+	},
+	"Networkmessage:getU16": {
+	  "prefix": "getU16",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:getU16()$2"
+	  ],
+	  "description": "Networkmessage:getU16"
+	},
+	"Networkmessage:getU32": {
+	  "prefix": "getU32",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:getU32()$2"
+	  ],
+	  "description": "Networkmessage:getU32"
+	},
+	"Networkmessage:getU64": {
+	  "prefix": "getU64",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:getU64()$2"
+	  ],
+	  "description": "Networkmessage:getU64"
+	},
+	"Networkmessage:getString": {
+	  "prefix": "getString",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:getString()$2"
+	  ],
+	  "description": "Networkmessage:getString"
+	},
+	"Networkmessage:getPosition": {
+	  "prefix": "getPosition",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:getPosition()$2"
+	  ],
+	  "description": "Networkmessage:getPosition"
+	},
+	"Networkmessage:addByte": {
+	  "prefix": "addByte",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:addByte(${2:number})$3"
+	  ],
+	  "description": "Networkmessage:addByte"
+	},
+	"Networkmessage:addU16": {
+	  "prefix": "addU16",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:addU16(${2:number})$3"
+	  ],
+	  "description": "Networkmessage:addU16"
+	},
+	"Networkmessage:addU32": {
+	  "prefix": "addU32",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:addU32(${2:number})$3"
+	  ],
+	  "description": "Networkmessage:addU32"
+	},
+	"Networkmessage:addU64": {
+	  "prefix": "addU64",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:addU64(${2:number})$3"
+	  ],
+	  "description": "Networkmessage:addU64"
+	},
+	"Networkmessage:addString": {
+	  "prefix": "addString",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:addString(${2:string})$3"
+	  ],
+	  "description": "Networkmessage:addString"
+	},
+	"Networkmessage:addPosition": {
+	  "prefix": "addPosition",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:addPosition(${2:position})$3"
+	  ],
+	  "description": "Networkmessage:addPosition"
+	},
+	"Networkmessage:addDouble": {
+	  "prefix": "addDouble",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:addDouble(${2:number})$3"
+	  ],
+	  "description": "Networkmessage:addDouble"
+	},
+	"Networkmessage:addItem": {
+	  "prefix": "addItem",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:addItem(${2:item})$3"
+	  ],
+	  "description": "Networkmessage:addItem"
+	},
+	"Networkmessage:addItemId": {
+	  "prefix": "addItemId",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:addItemId(${2:itemId})$3"
+	  ],
+	  "description": "Networkmessage:addItemId"
+	},
+	"Networkmessage:reset": {
+	  "prefix": "reset",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:reset()$2"
+	  ],
+	  "description": "Networkmessage:reset"
+	},
+	"Networkmessage:seek": {
+	  "prefix": "seek",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:seek(${2:position})$3"
+	  ],
+	  "description": "Networkmessage:seek"
+	},
+	"Networkmessage:tell": {
+	  "prefix": "tell",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:tell()$2"
+	  ],
+	  "description": "Networkmessage:tell"
+	},
+	"Networkmessage:len": {
+	  "prefix": "len",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:len()$2"
+	  ],
+	  "description": "Networkmessage:len"
+	},
+	"Networkmessage:skipBytes": {
+	  "prefix": "skipBytes",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:skipBytes(${2:number})$3"
+	  ],
+	  "description": "Networkmessage:skipBytes"
+	},
+	"Networkmessage:sendToPlayer": {
+	  "prefix": "sendToPlayer",
+		"scope": "lua",
+		"body": [
+		"${1:networkmessage}:sendToPlayer(${2:player})$3"
+	  ],
+	  "description": "Networkmessage:sendToPlayer"
+	},
+	"Npc": {
+	  "prefix": "Npc",
+		"scope": "lua",
+		"body": [
+		"Npc(${1:[id or name or userdata]})$2"
+	  ],
+	  "description": "Npc"
+	},
+	"Npc:isNpc": {
+	  "prefix": "isNpc",
+		"scope": "lua",
+		"body": [
+		"${1:npc}:isNpc()$2"
+	  ],
+	  "description": "Npc:isNpc"
+	},
+	"Npc:setMasterPos": {
+	  "prefix": "setMasterPos",
+		"scope": "lua",
+		"body": [
+		"${1:npc}:setMasterPos(${2:pos[}, ${3:radius]})$4"
+	  ],
+	  "description": "Npc:setMasterPos"
+	},
+	"Npc:getSpeechBubble": {
+	  "prefix": "getSpeechBubble",
+		"scope": "lua",
+		"body": [
+		"${1:npc}:getSpeechBubble()$2"
+	  ],
+	  "description": "Npc:getSpeechBubble"
+	},
+	"Npc:setSpeechBubble": {
+	  "prefix": "setSpeechBubble",
+		"scope": "lua",
+		"body": [
+		"${1:npc}:setSpeechBubble(${2:speechBubble})$3"
+	  ],
+	  "description": "Npc:setSpeechBubble"
+	},
+	"os.mtime": {
+	  "prefix": "os.mtime",
+		"scope": "lua",
+		"body": [
+		"os.mtime()$1"
+	  ],
+	  "description": "os.mtime"
+	},
+	"Outfit": {
+	  "prefix": "Outfit",
+		"scope": "lua",
+		"body": [
+		"Outfit(${1:looktype})$2"
+	  ],
+	  "description": "Outfit"
+	},
+	"Party": {
+	  "prefix": "Party",
+		"scope": "lua",
+		"body": [
+		"Party(${1:userdata})$2"
+	  ],
+	  "description": "Party"
+	},
+	"Party:disband": {
+	  "prefix": "disband",
+		"scope": "lua",
+		"body": [
+		"${1:party}:disband()$2"
+	  ],
+	  "description": "Party:disband"
+	},
+	"Party:getLeader": {
+	  "prefix": "getLeader",
+		"scope": "lua",
+		"body": [
+		"${1:party}:getLeader()$2"
+	  ],
+	  "description": "Party:getLeader"
+	},
+	"Party:setLeader": {
+	  "prefix": "setLeader",
+		"scope": "lua",
+		"body": [
+		"${1:party}:setLeader(${2:player})$3"
+	  ],
+	  "description": "Party:setLeader"
+	},
+	"Party:getMembers": {
+	  "prefix": "getMembers",
+		"scope": "lua",
+		"body": [
+		"${1:party}:getMembers()$2"
+	  ],
+	  "description": "Party:getMembers"
+	},
+	"Party:getMemberCount": {
+	  "prefix": "getMemberCount",
+		"scope": "lua",
+		"body": [
+		"${1:party}:getMemberCount()$2"
+	  ],
+	  "description": "Party:getMemberCount"
+	},
+	"Party:getInvitees": {
+	  "prefix": "getInvitees",
+		"scope": "lua",
+		"body": [
+		"${1:party}:getInvitees()$2"
+	  ],
+	  "description": "Party:getInvitees"
+	},
+	"Party:getInviteeCount": {
+	  "prefix": "getInviteeCount",
+		"scope": "lua",
+		"body": [
+		"${1:party}:getInviteeCount()$2"
+	  ],
+	  "description": "Party:getInviteeCount"
+	},
+	"Party:addInvite": {
+	  "prefix": "addInvite",
+		"scope": "lua",
+		"body": [
+		"${1:party}:addInvite(${2:player})$3"
+	  ],
+	  "description": "Party:addInvite"
+	},
+	"Party:removeInvite": {
+	  "prefix": "removeInvite",
+		"scope": "lua",
+		"body": [
+		"${1:party}:removeInvite(${2:player})$3"
+	  ],
+	  "description": "Party:removeInvite"
+	},
+	"Party:addMember": {
+	  "prefix": "addMember",
+		"scope": "lua",
+		"body": [
+		"${1:party}:addMember(${2:player})$3"
+	  ],
+	  "description": "Party:addMember"
+	},
+	"Party:removeMember": {
+	  "prefix": "removeMember",
+		"scope": "lua",
+		"body": [
+		"${1:party}:removeMember(${2:player})$3"
+	  ],
+	  "description": "Party:removeMember"
+	},
+	"Party:isSharedExperienceActive": {
+	  "prefix": "isSharedExperienceActive",
+		"scope": "lua",
+		"body": [
+		"${1:party}:isSharedExperienceActive()$2"
+	  ],
+	  "description": "Party:isSharedExperienceActive"
+	},
+	"Party:isSharedExperienceEnabled": {
+	  "prefix": "isSharedExperienceEnabled",
+		"scope": "lua",
+		"body": [
+		"${1:party}:isSharedExperienceEnabled()$2"
+	  ],
+	  "description": "Party:isSharedExperienceEnabled"
+	},
+	"Party:shareExperience": {
+	  "prefix": "shareExperience",
+		"scope": "lua",
+		"body": [
+		"${1:party}:shareExperience(${2:experience})$3"
+	  ],
+	  "description": "Party:shareExperience"
+	},
+	"Party:setSharedExperience": {
+	  "prefix": "setSharedExperience",
+		"scope": "lua",
+		"body": [
+		"${1:party}:setSharedExperience(${2:active})$3"
+	  ],
+	  "description": "Party:setSharedExperience"
+	},
+	"Player": {
+	  "prefix": "Player",
+		"scope": "lua",
+		"body": [
+		"Player(${1:id or guid or name or userdata})$2"
+	  ],
+	  "description": "Player"
+	},
+	"Player:isPlayer": {
+	  "prefix": "isPlayer",
+		"scope": "lua",
+		"body": [
+		"${1:player}:isPlayer()$2"
+	  ],
+	  "description": "Player:isPlayer"
+	},
+	"Player:getGuid": {
+	  "prefix": "getGuid",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getGuid()$2"
+	  ],
+	  "description": "Player:getGuid"
+	},
+	"Player:getIp": {
+	  "prefix": "getIp",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getIp()$2"
+	  ],
+	  "description": "Player:getIp"
+	},
+	"Player:getAccountId": {
+	  "prefix": "getAccountId",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getAccountId()$2"
+	  ],
+	  "description": "Player:getAccountId"
+	},
+	"Player:getLastLoginSaved": {
+	  "prefix": "getLastLoginSaved",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getLastLoginSaved()$2"
+	  ],
+	  "description": "Player:getLastLoginSaved"
+	},
+	"Player:getLastLogout": {
+	  "prefix": "getLastLogout",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getLastLogout()$2"
+	  ],
+	  "description": "Player:getLastLogout"
+	},
+	"Player:getAccountType": {
+	  "prefix": "getAccountType",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getAccountType()$2"
+	  ],
+	  "description": "Player:getAccountType"
+	},
+	"Player:setAccountType": {
+	  "prefix": "setAccountType",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setAccountType(${2:accountType})$3"
+	  ],
+	  "description": "Player:setAccountType"
+	},
+	"Player:getCapacity": {
+	  "prefix": "getCapacity",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getCapacity()$2"
+	  ],
+	  "description": "Player:getCapacity"
+	},
+	"Player:setCapacity": {
+	  "prefix": "setCapacity",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setCapacity(${2:capacity})$3"
+	  ],
+	  "description": "Player:setCapacity"
+	},
+	"Player:getFreeCapacity": {
+	  "prefix": "getFreeCapacity",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getFreeCapacity()$2"
+	  ],
+	  "description": "Player:getFreeCapacity"
+	},
+	"Player:getDepotChest": {
+	  "prefix": "getDepotChest",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getDepotChest(${2:depotId[}, ${3:autoCreate = false]})$4"
+	  ],
+	  "description": "Player:getDepotChest"
+	},
+	"Player:getInbox": {
+	  "prefix": "getInbox",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getInbox()$2"
+	  ],
+	  "description": "Player:getInbox"
+	},
+	"Player:getSkullTime": {
+	  "prefix": "getSkullTime",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getSkullTime()$2"
+	  ],
+	  "description": "Player:getSkullTime"
+	},
+	"Player:setSkullTime": {
+	  "prefix": "setSkullTime",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setSkullTime(${2:skullTime})$3"
+	  ],
+	  "description": "Player:setSkullTime"
+	},
+	"Player:getDeathPenalty": {
+	  "prefix": "getDeathPenalty",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getDeathPenalty()$2"
+	  ],
+	  "description": "Player:getDeathPenalty"
+	},
+	"Player:getExperience": {
+	  "prefix": "getExperience",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getExperience()$2"
+	  ],
+	  "description": "Player:getExperience"
+	},
+	"Player:addExperience": {
+	  "prefix": "addExperience",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addExperience(${2:experience[}, ${3:sendText = false]})$4"
+	  ],
+	  "description": "Player:addExperience"
+	},
+	"Player:removeExperience": {
+	  "prefix": "removeExperience",
+		"scope": "lua",
+		"body": [
+		"${1:player}:removeExperience(${2:experience[}, ${3:sendText = false]})$4"
+	  ],
+	  "description": "Player:removeExperience"
+	},
+	"Player:getLevel": {
+	  "prefix": "getLevel",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getLevel()$2"
+	  ],
+	  "description": "Player:getLevel"
+	},
+	"Player:getMagicLevel": {
+	  "prefix": "getMagicLevel",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getMagicLevel()$2"
+	  ],
+	  "description": "Player:getMagicLevel"
+	},
+	"Player:getBaseMagicLevel": {
+	  "prefix": "getBaseMagicLevel",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getBaseMagicLevel()$2"
+	  ],
+	  "description": "Player:getBaseMagicLevel"
+	},
+	"Player:getMana": {
+	  "prefix": "getMana",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getMana()$2"
+	  ],
+	  "description": "Player:getMana"
+	},
+	"Player:addMana": {
+	  "prefix": "addMana",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addMana(${2:manaChange[}, ${3:animationOnLoss = false]})$4"
+	  ],
+	  "description": "Player:addMana"
+	},
+	"Player:getMaxMana": {
+	  "prefix": "getMaxMana",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getMaxMana()$2"
+	  ],
+	  "description": "Player:getMaxMana"
+	},
+	"Player:setMaxMana": {
+	  "prefix": "setMaxMana",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setMaxMana(${2:maxMana})$3"
+	  ],
+	  "description": "Player:setMaxMana"
+	},
+	"Player:getManaSpent": {
+	  "prefix": "getManaSpent",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getManaSpent()$2"
+	  ],
+	  "description": "Player:getManaSpent"
+	},
+	"Player:addManaSpent": {
+	  "prefix": "addManaSpent",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addManaSpent(${2:amount})$3"
+	  ],
+	  "description": "Player:addManaSpent"
+	},
+	"Player:removeManaSpent": {
+	  "prefix": "removeManaSpent",
+		"scope": "lua",
+		"body": [
+		"${1:player}:removeManaSpent(${2:amount[}, ${3:notify = true]})$4"
+	  ],
+	  "description": "Player:removeManaSpent"
+	},
+	"Player:getBaseMaxHealth": {
+	  "prefix": "getBaseMaxHealth",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getBaseMaxHealth()$2"
+	  ],
+	  "description": "Player:getBaseMaxHealth"
+	},
+	"Player:getBaseMaxMana": {
+	  "prefix": "getBaseMaxMana",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getBaseMaxMana()$2"
+	  ],
+	  "description": "Player:getBaseMaxMana"
+	},
+	"Player:getSkillLevel": {
+	  "prefix": "getSkillLevel",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getSkillLevel(${2:skillType})$3"
+	  ],
+	  "description": "Player:getSkillLevel"
+	},
+	"Player:getEffectiveSkillLevel": {
+	  "prefix": "getEffectiveSkillLevel",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getEffectiveSkillLevel(${2:skillType})$3"
+	  ],
+	  "description": "Player:getEffectiveSkillLevel"
+	},
+	"Player:getSkillPercent": {
+	  "prefix": "getSkillPercent",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getSkillPercent(${2:skillType})$3"
+	  ],
+	  "description": "Player:getSkillPercent"
+	},
+	"Player:getSkillTries": {
+	  "prefix": "getSkillTries",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getSkillTries(${2:skillType})$3"
+	  ],
+	  "description": "Player:getSkillTries"
+	},
+	"Player:addSkillTries": {
+	  "prefix": "addSkillTries",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addSkillTries(${2:skillType}, ${3:tries})$4"
+	  ],
+	  "description": "Player:addSkillTries"
+	},
+	"Player:removeSkillTries": {
+	  "prefix": "removeSkillTries",
+		"scope": "lua",
+		"body": [
+		"${1:player}:removeSkillTries(${2:skillType}, ${3:tries[}, ${4:notify = true]})$5"
+	  ],
+	  "description": "Player:removeSkillTries"
+	},
+	"Player:getSpecialSkill": {
+	  "prefix": "getSpecialSkill",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getSpecialSkill(${2:specialSkillType})$3"
+	  ],
+	  "description": "Player:getSpecialSkill"
+	},
+	"Player:addSpecialSkill": {
+	  "prefix": "addSpecialSkill",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addSpecialSkill(${2:specialSkillType}, ${3:value})$4"
+	  ],
+	  "description": "Player:addSpecialSkill"
+	},
+	"Player:addOfflineTrainingTime": {
+	  "prefix": "addOfflineTrainingTime",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addOfflineTrainingTime(${2:time})$3"
+	  ],
+	  "description": "Player:addOfflineTrainingTime"
+	},
+	"Player:getOfflineTrainingTime": {
+	  "prefix": "getOfflineTrainingTime",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getOfflineTrainingTime()$2"
+	  ],
+	  "description": "Player:getOfflineTrainingTime"
+	},
+	"Player:removeOfflineTrainingTime": {
+	  "prefix": "removeOfflineTrainingTime",
+		"scope": "lua",
+		"body": [
+		"${1:player}:removeOfflineTrainingTime(${2:time})$3"
+	  ],
+	  "description": "Player:removeOfflineTrainingTime"
+	},
+	"Player:addOfflineTrainingTries": {
+	  "prefix": "addOfflineTrainingTries",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addOfflineTrainingTries(${2:skillType}, ${3:tries})$4"
+	  ],
+	  "description": "Player:addOfflineTrainingTries"
+	},
+	"Player:getOfflineTrainingSkill": {
+	  "prefix": "getOfflineTrainingSkill",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getOfflineTrainingSkill()$2"
+	  ],
+	  "description": "Player:getOfflineTrainingSkill"
+	},
+	"Player:setOfflineTrainingSkill": {
+	  "prefix": "setOfflineTrainingSkill",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setOfflineTrainingSkill(${2:skillId})$3"
+	  ],
+	  "description": "Player:setOfflineTrainingSkill"
+	},
+	"Player:getItemCount": {
+	  "prefix": "getItemCount",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getItemCount(${2:itemId[}, ${3:subType = -1]})$4"
+	  ],
+	  "description": "Player:getItemCount"
+	},
+	"Player:getItemById": {
+	  "prefix": "getItemById",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getItemById(${2:itemId}, ${3:deepSearch[}, ${4:subType = -1]})$5"
+	  ],
+	  "description": "Player:getItemById"
+	},
+	"Player:getVocation": {
+	  "prefix": "getVocation",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getVocation()$2"
+	  ],
+	  "description": "Player:getVocation"
+	},
+	"Player:setVocation": {
+	  "prefix": "setVocation",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setVocation(${2:id or name or userdata})$3"
+	  ],
+	  "description": "Player:setVocation"
+	},
+	"Player:getSex": {
+	  "prefix": "getSex",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getSex()$2"
+	  ],
+	  "description": "Player:getSex"
+	},
+	"Player:setSex": {
+	  "prefix": "setSex",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setSex(${2:newSex})$3"
+	  ],
+	  "description": "Player:setSex"
+	},
+	"Player:getTown": {
+	  "prefix": "getTown",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getTown()$2"
+	  ],
+	  "description": "Player:getTown"
+	},
+	"Player:setTown": {
+	  "prefix": "setTown",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setTown(${2:town})$3"
+	  ],
+	  "description": "Player:setTown"
+	},
+	"Player:getGuild": {
+	  "prefix": "getGuild",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getGuild()$2"
+	  ],
+	  "description": "Player:getGuild"
+	},
+	"Player:setGuild": {
+	  "prefix": "setGuild",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setGuild(${2:guild})$3"
+	  ],
+	  "description": "Player:setGuild"
+	},
+	"Player:getGuildLevel": {
+	  "prefix": "getGuildLevel",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getGuildLevel()$2"
+	  ],
+	  "description": "Player:getGuildLevel"
+	},
+	"Player:setGuildLevel": {
+	  "prefix": "setGuildLevel",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setGuildLevel(${2:level})$3"
+	  ],
+	  "description": "Player:setGuildLevel"
+	},
+	"Player:getGuildNick": {
+	  "prefix": "getGuildNick",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getGuildNick()$2"
+	  ],
+	  "description": "Player:getGuildNick"
+	},
+	"Player:setGuildNick": {
+	  "prefix": "setGuildNick",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setGuildNick(${2:nick})$3"
+	  ],
+	  "description": "Player:setGuildNick"
+	},
+	"Player:getGroup": {
+	  "prefix": "getGroup",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getGroup()$2"
+	  ],
+	  "description": "Player:getGroup"
+	},
+	"Player:setGroup": {
+	  "prefix": "setGroup",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setGroup(${2:group})$3"
+	  ],
+	  "description": "Player:setGroup"
+	},
+	"Player:getStamina": {
+	  "prefix": "getStamina",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getStamina()$2"
+	  ],
+	  "description": "Player:getStamina"
+	},
+	"Player:setStamina": {
+	  "prefix": "setStamina",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setStamina(${2:stamina})$3"
+	  ],
+	  "description": "Player:setStamina"
+	},
+	"Player:getSoul": {
+	  "prefix": "getSoul",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getSoul()$2"
+	  ],
+	  "description": "Player:getSoul"
+	},
+	"Player:addSoul": {
+	  "prefix": "addSoul",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addSoul(${2:soulChange})$3"
+	  ],
+	  "description": "Player:addSoul"
+	},
+	"Player:getMaxSoul": {
+	  "prefix": "getMaxSoul",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getMaxSoul()$2"
+	  ],
+	  "description": "Player:getMaxSoul"
+	},
+	"Player:getBankBalance": {
+	  "prefix": "getBankBalance",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getBankBalance()$2"
+	  ],
+	  "description": "Player:getBankBalance"
+	},
+	"Player:setBankBalance": {
+	  "prefix": "setBankBalance",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setBankBalance(${2:bankBalance})$3"
+	  ],
+	  "description": "Player:setBankBalance"
+	},
+	"Player:getStorageValue": {
+	  "prefix": "getStorageValue",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getStorageValue(${2:key})$3"
+	  ],
+	  "description": "Player:getStorageValue"
+	},
+	"Player:setStorageValue": {
+	  "prefix": "setStorageValue",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setStorageValue(${2:key}, ${3:value})$4"
+	  ],
+	  "description": "Player:setStorageValue"
+	},
+	"Player:addItem": {
+	  "prefix": "addItem",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addItem(${2:itemId[}, ${3:count = 1[}, ${4:canDropOnMap = true[}, ${5:subType = 1[}, ${6:slot = CONST_SLOT_WHEREEVER]]]]})$7"
+	  ],
+	  "description": "Player:addItem"
+	},
+	"Player:addItemEx": {
+	  "prefix": "addItemEx",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addItemEx(${2:item[}, ${3:canDropOnMap = true[}, ${4:slot = CONST_SLOT_WHEREEVER]]})$5"
+	  ],
+	  "description": "Player:addItemEx"
+	},
+	"Player:removeItem": {
+	  "prefix": "removeItem",
+		"scope": "lua",
+		"body": [
+		"${1:player}:removeItem(${2:itemId}, ${3:count[}, ${4:subType = -1[}, ${5:ignoreEquipped = false]]})$6"
+	  ],
+	  "description": "Player:removeItem"
+	},
+	"Player:sendSupplyUsed": {
+	  "prefix": "sendSupplyUsed",
+		"scope": "lua",
+		"body": [
+		"${1:player}:sendSupplyUsed(${2:item})$3"
+	  ],
+	  "description": "Player:sendSupplyUsed"
+	},
+	"Player:getMoney": {
+	  "prefix": "getMoney",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getMoney()$2"
+	  ],
+	  "description": "Player:getMoney"
+	},
+	"Player:addMoney": {
+	  "prefix": "addMoney",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addMoney(${2:money})$3"
+	  ],
+	  "description": "Player:addMoney"
+	},
+	"Player:removeMoney": {
+	  "prefix": "removeMoney",
+		"scope": "lua",
+		"body": [
+		"${1:player}:removeMoney(${2:money})$3"
+	  ],
+	  "description": "Player:removeMoney"
+	},
+	"Player:showTextDialog": {
+	  "prefix": "showTextDialog",
+		"scope": "lua",
+		"body": [
+		"${1:player}:showTextDialog(${2:id or name or userdata[}, ${3:text[}, ${4:canWrite[}, ${5:length]]]})$6"
+	  ],
+	  "description": "Player:showTextDialog"
+	},
+	"Player:sendTextMessage": {
+	  "prefix": "sendTextMessage",
+		"scope": "lua",
+		"body": [
+		"${1:player}:sendTextMessage(${2:type}, ${3:text}, ${4:channelId})$5"
+	  ],
+	  "description": "Player:sendTextMessage"
+	},
+	"Player:sendChannelMessage": {
+	  "prefix": "sendChannelMessage",
+		"scope": "lua",
+		"body": [
+		"${1:player}:sendChannelMessage(${2:author}, ${3:text}, ${4:type}, ${5:channelId})$6"
+	  ],
+	  "description": "Player:sendChannelMessage"
+	},
+	"Player:sendPrivateMessage": {
+	  "prefix": "sendPrivateMessage",
+		"scope": "lua",
+		"body": [
+		"${1:player}:sendPrivateMessage(${2:speaker}, ${3:text[}, ${4:type]})$5"
+	  ],
+	  "description": "Player:sendPrivateMessage"
+	},
+	"Player:channelSay": {
+	  "prefix": "channelSay",
+		"scope": "lua",
+		"body": [
+		"${1:player}:channelSay(${2:speaker}, ${3:type}, ${4:text}, ${5:channelId})$6"
+	  ],
+	  "description": "Player:channelSay"
+	},
+	"Player:openChannel": {
+	  "prefix": "openChannel",
+		"scope": "lua",
+		"body": [
+		"${1:player}:openChannel(${2:channelId})$3"
+	  ],
+	  "description": "Player:openChannel"
+	},
+	"Player:getSlotItem": {
+	  "prefix": "getSlotItem",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getSlotItem(${2:slot})$3"
+	  ],
+	  "description": "Player:getSlotItem"
+	},
+	"Player:getParty": {
+	  "prefix": "getParty",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getParty()$2"
+	  ],
+	  "description": "Player:getParty"
+	},
+	"Player:addOutfit": {
+	  "prefix": "addOutfit",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addOutfit(${2:lookType})$3"
+	  ],
+	  "description": "Player:addOutfit"
+	},
+	"Player:addOutfitAddon": {
+	  "prefix": "addOutfitAddon",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addOutfitAddon(${2:lookType}, ${3:addon})$4"
+	  ],
+	  "description": "Player:addOutfitAddon"
+	},
+	"Player:removeOutfit": {
+	  "prefix": "removeOutfit",
+		"scope": "lua",
+		"body": [
+		"${1:player}:removeOutfit(${2:lookType})$3"
+	  ],
+	  "description": "Player:removeOutfit"
+	},
+	"Player:removeOutfitAddon": {
+	  "prefix": "removeOutfitAddon",
+		"scope": "lua",
+		"body": [
+		"${1:player}:removeOutfitAddon(${2:lookType}, ${3:addon})$4"
+	  ],
+	  "description": "Player:removeOutfitAddon"
+	},
+	"Player:hasOutfit": {
+	  "prefix": "hasOutfit",
+		"scope": "lua",
+		"body": [
+		"${1:player}:hasOutfit(${2:lookType[}, ${3:addon = 0]})$4"
+	  ],
+	  "description": "Player:hasOutfit"
+	},
+	"Player:canWearOutfit": {
+	  "prefix": "canWearOutfit",
+		"scope": "lua",
+		"body": [
+		"${1:player}:canWearOutfit(${2:lookType[}, ${3:addon = 0]})$4"
+	  ],
+	  "description": "Player:canWearOutfit"
+	},
+	"Player:sendOutfitWindow": {
+	  "prefix": "sendOutfitWindow",
+		"scope": "lua",
+		"body": [
+		"${1:player}:sendOutfitWindow()$2"
+	  ],
+	  "description": "Player:sendOutfitWindow"
+	},
+	"Player:sendEditPodium": {
+	  "prefix": "sendEditPodium",
+		"scope": "lua",
+		"body": [
+		"${1:player}:sendEditPodium(${2:item})$3"
+	  ],
+	  "description": "Player:sendEditPodium"
+	},
+	"Player:addMount": {
+	  "prefix": "addMount",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addMount(${2:mountId or mountName})$3"
+	  ],
+	  "description": "Player:addMount"
+	},
+	"Player:removeMount": {
+	  "prefix": "removeMount",
+		"scope": "lua",
+		"body": [
+		"${1:player}:removeMount(${2:mountId or mountName})$3"
+	  ],
+	  "description": "Player:removeMount"
+	},
+	"Player:hasMount": {
+	  "prefix": "hasMount",
+		"scope": "lua",
+		"body": [
+		"${1:player}:hasMount(${2:mountId or mountName})$3"
+	  ],
+	  "description": "Player:hasMount"
+	},
+	"Player:getPremiumEndsAt": {
+	  "prefix": "getPremiumEndsAt",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getPremiumEndsAt()$2"
+	  ],
+	  "description": "Player:getPremiumEndsAt"
+	},
+	"Player:setPremiumEndsAt": {
+	  "prefix": "setPremiumEndsAt",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setPremiumEndsAt(${2:timestamp})$3"
+	  ],
+	  "description": "Player:setPremiumEndsAt"
+	},
+	"Player:hasBlessing": {
+	  "prefix": "hasBlessing",
+		"scope": "lua",
+		"body": [
+		"${1:player}:hasBlessing(${2:blessing})$3"
+	  ],
+	  "description": "Player:hasBlessing"
+	},
+	"Player:addBlessing": {
+	  "prefix": "addBlessing",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addBlessing(${2:blessing})$3"
+	  ],
+	  "description": "Player:addBlessing"
+	},
+	"Player:removeBlessing": {
+	  "prefix": "removeBlessing",
+		"scope": "lua",
+		"body": [
+		"${1:player}:removeBlessing(${2:blessing})$3"
+	  ],
+	  "description": "Player:removeBlessing"
+	},
+	"Player:canLearnSpell": {
+	  "prefix": "canLearnSpell",
+		"scope": "lua",
+		"body": [
+		"${1:player}:canLearnSpell(${2:spellName})$3"
+	  ],
+	  "description": "Player:canLearnSpell"
+	},
+	"Player:learnSpell": {
+	  "prefix": "learnSpell",
+		"scope": "lua",
+		"body": [
+		"${1:player}:learnSpell(${2:spellName})$3"
+	  ],
+	  "description": "Player:learnSpell"
+	},
+	"Player:forgetSpell": {
+	  "prefix": "forgetSpell",
+		"scope": "lua",
+		"body": [
+		"${1:player}:forgetSpell(${2:spellName})$3"
+	  ],
+	  "description": "Player:forgetSpell"
+	},
+	"Player:hasLearnedSpell": {
+	  "prefix": "hasLearnedSpell",
+		"scope": "lua",
+		"body": [
+		"${1:player}:hasLearnedSpell(${2:spellName})$3"
+	  ],
+	  "description": "Player:hasLearnedSpell"
+	},
+	"Player:sendTutorial": {
+	  "prefix": "sendTutorial",
+		"scope": "lua",
+		"body": [
+		"${1:player}:sendTutorial(${2:tutorialId})$3"
+	  ],
+	  "description": "Player:sendTutorial"
+	},
+	"Player:addMapMark": {
+	  "prefix": "addMapMark",
+		"scope": "lua",
+		"body": [
+		"${1:player}:addMapMark(${2:position}, ${3:type}, ${4:description})$5"
+	  ],
+	  "description": "Player:addMapMark"
+	},
+	"Player:save": {
+	  "prefix": "save",
+		"scope": "lua",
+		"body": [
+		"${1:player}:save()$2"
+	  ],
+	  "description": "Player:save"
+	},
+	"Player:popupFYI": {
+	  "prefix": "popupFYI",
+		"scope": "lua",
+		"body": [
+		"${1:player}:popupFYI(${2:message})$3"
+	  ],
+	  "description": "Player:popupFYI"
+	},
+	"Player:isPzLocked": {
+	  "prefix": "isPzLocked",
+		"scope": "lua",
+		"body": [
+		"${1:player}:isPzLocked()$2"
+	  ],
+	  "description": "Player:isPzLocked"
+	},
+	"Player:getClient": {
+	  "prefix": "getClient",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getClient()$2"
+	  ],
+	  "description": "Player:getClient"
+	},
+	"Player:getHouse": {
+	  "prefix": "getHouse",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getHouse()$2"
+	  ],
+	  "description": "Player:getHouse"
+	},
+	"Player:sendHouseWindow": {
+	  "prefix": "sendHouseWindow",
+		"scope": "lua",
+		"body": [
+		"${1:player}:sendHouseWindow(${2:house}, ${3:listId})$4"
+	  ],
+	  "description": "Player:sendHouseWindow"
+	},
+	"Player:setEditHouse": {
+	  "prefix": "setEditHouse",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setEditHouse(${2:house}, ${3:listId})$4"
+	  ],
+	  "description": "Player:setEditHouse"
+	},
+	"Player:setGhostMode": {
+	  "prefix": "setGhostMode",
+		"scope": "lua",
+		"body": [
+		"${1:player}:setGhostMode(${2:enabled[}, ${3:magicEffect = CONST_ME_TELEPORT]})$4"
+	  ],
+	  "description": "Player:setGhostMode"
+	},
+	"Player:getContainerId": {
+	  "prefix": "getContainerId",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getContainerId(${2:container})$3"
+	  ],
+	  "description": "Player:getContainerId"
+	},
+	"Player:getContainerById": {
+	  "prefix": "getContainerById",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getContainerById(${2:id})$3"
+	  ],
+	  "description": "Player:getContainerById"
+	},
+	"Player:getContainerIndex": {
+	  "prefix": "getContainerIndex",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getContainerIndex(${2:id})$3"
+	  ],
+	  "description": "Player:getContainerIndex"
+	},
+	"Player:getInstantSpells": {
+	  "prefix": "getInstantSpells",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getInstantSpells()$2"
+	  ],
+	  "description": "Player:getInstantSpells"
+	},
+	"Player:canCast": {
+	  "prefix": "canCast",
+		"scope": "lua",
+		"body": [
+		"${1:player}:canCast(${2:spell})$3"
+	  ],
+	  "description": "Player:canCast"
+	},
+	"Player:hasChaseMode": {
+	  "prefix": "hasChaseMode",
+		"scope": "lua",
+		"body": [
+		"${1:player}:hasChaseMode()$2"
+	  ],
+	  "description": "Player:hasChaseMode"
+	},
+	"Player:hasSecureMode": {
+	  "prefix": "hasSecureMode",
+		"scope": "lua",
+		"body": [
+		"${1:player}:hasSecureMode()$2"
+	  ],
+	  "description": "Player:hasSecureMode"
+	},
+	"Player:getFightMode": {
+	  "prefix": "getFightMode",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getFightMode()$2"
+	  ],
+	  "description": "Player:getFightMode"
+	},
+	"Player:getStoreInbox": {
+	  "prefix": "getStoreInbox",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getStoreInbox()$2"
+	  ],
+	  "description": "Player:getStoreInbox"
+	},
+	"Player:isNearDepotBox": {
+	  "prefix": "isNearDepotBox",
+		"scope": "lua",
+		"body": [
+		"${1:player}:isNearDepotBox()$2"
+	  ],
+	  "description": "Player:isNearDepotBox"
+	},
+	"Player:getIdleTime": {
+	  "prefix": "getIdleTime",
+		"scope": "lua",
+		"body": [
+		"${1:player}:getIdleTime()$2"
+	  ],
+	  "description": "Player:getIdleTime"
+	},
+	"Podium": {
+	  "prefix": "Podium",
+		"scope": "lua",
+		"body": [
+		"Podium(${1:uid})$2"
+	  ],
+	  "description": "Podium"
+	},
+	"Podium:getOutfit": {
+	  "prefix": "getOutfit",
+		"scope": "lua",
+		"body": [
+		"${1:podium}:getOutfit()$2"
+	  ],
+	  "description": "Podium:getOutfit"
+	},
+	"Podium:setOutfit": {
+	  "prefix": "setOutfit",
+		"scope": "lua",
+		"body": [
+		"${1:podium}:setOutfit(${2:outfit})$3"
+	  ],
+	  "description": "Podium:setOutfit"
+	},
+	"Podium:hasFlag": {
+	  "prefix": "hasFlag",
+		"scope": "lua",
+		"body": [
+		"${1:podium}:hasFlag(${2:flag})$3"
+	  ],
+	  "description": "Podium:hasFlag"
+	},
+	"Podium:setFlag": {
+	  "prefix": "setFlag",
+		"scope": "lua",
+		"body": [
+		"${1:podium}:setFlag(${2:flag}, ${3:value})$4"
+	  ],
+	  "description": "Podium:setFlag"
+	},
+	"Podium:getDirection": {
+	  "prefix": "getDirection",
+		"scope": "lua",
+		"body": [
+		"${1:podium}:getDirection()$2"
+	  ],
+	  "description": "Podium:getDirection"
+	},
+	"Podium:setDirection": {
+	  "prefix": "setDirection",
+		"scope": "lua",
+		"body": [
+		"${1:podium}:setDirection(${2:direction})$3"
+	  ],
+	  "description": "Podium:setDirection"
+	},
+	"Position": {
+	  "prefix": "Position",
+		"scope": "lua",
+		"body": [
+		"Position(${1:[position]})$2"
+	  ],
+	  "description": "Position"
+	},
+	"Position:getDistance": {
+	  "prefix": "getDistance",
+		"scope": "lua",
+		"body": [
+		"${1:position}:getDistance(${2:positionEx})$3"
+	  ],
+	  "description": "Position:getDistance"
+	},
+	"Position:isSightClear": {
+	  "prefix": "isSightClear",
+		"scope": "lua",
+		"body": [
+		"${1:position}:isSightClear(${2:positionEx[}, ${3:sameFloor = true]})$4"
+	  ],
+	  "description": "Position:isSightClear"
+	},
+	"Position:sendMagicEffect": {
+	  "prefix": "sendMagicEffect",
+		"scope": "lua",
+		"body": [
+		"${1:position}:sendMagicEffect(${2:magicEffect[}, ${3:player = nullptr]})$4"
+	  ],
+	  "description": "Position:sendMagicEffect"
+	},
+	"Position:sendDistanceEffect": {
+	  "prefix": "sendDistanceEffect",
+		"scope": "lua",
+		"body": [
+		"${1:position}:sendDistanceEffect(${2:positionEx}, ${3:distanceEffect[}, ${4:player = nullptr]})$5"
+	  ],
+	  "description": "Position:sendDistanceEffect"
+	},
+	"Spell": {
+	  "prefix": "Spell",
+		"scope": "lua",
+		"body": [
+		"Spell(${1:type})$2"
+	  ],
+	  "description": "Spell"
+	},
+	"Spell:onCastSpell": {
+	  "prefix": "onCastSpell",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:onCastSpell(${2:callback})$3"
+	  ],
+	  "description": "Spell:onCastSpell"
+	},
+	"Spell:register": {
+	  "prefix": "register",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:register()$2"
+	  ],
+	  "description": "Spell:register"
+	},
+	"Spell:name": {
+	  "prefix": "name",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:name(${2:name})$3"
+	  ],
+	  "description": "Spell:name"
+	},
+	"Spell:id": {
+	  "prefix": "id",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:id(${2:id})$3"
+	  ],
+	  "description": "Spell:id"
+	},
+	"Spell:group": {
+	  "prefix": "group",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:group(${2:primaryGroup[}, ${3:secondaryGroup]})$4"
+	  ],
+	  "description": "Spell:group"
+	},
+	"Spell:cooldown": {
+	  "prefix": "cooldown",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:cooldown(${2:cooldown})$3"
+	  ],
+	  "description": "Spell:cooldown"
+	},
+	"Spell:groupCooldown": {
+	  "prefix": "groupCooldown",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:groupCooldown(${2:primaryGroupCd[}, ${3:secondaryGroupCd]})$4"
+	  ],
+	  "description": "Spell:groupCooldown"
+	},
+	"Spell:level": {
+	  "prefix": "level",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:level(${2:lvl})$3"
+	  ],
+	  "description": "Spell:level"
+	},
+	"Spell:magicLevel": {
+	  "prefix": "magicLevel",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:magicLevel(${2:lvl})$3"
+	  ],
+	  "description": "Spell:magicLevel"
+	},
+	"Spell:mana": {
+	  "prefix": "mana",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:mana(${2:mana})$3"
+	  ],
+	  "description": "Spell:mana"
+	},
+	"Spell:manaPercent": {
+	  "prefix": "manaPercent",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:manaPercent(${2:percent})$3"
+	  ],
+	  "description": "Spell:manaPercent"
+	},
+	"Spell:soul": {
+	  "prefix": "soul",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:soul(${2:soul})$3"
+	  ],
+	  "description": "Spell:soul"
+	},
+	"Spell:range": {
+	  "prefix": "range",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:range(${2:range})$3"
+	  ],
+	  "description": "Spell:range"
+	},
+	"Spell:isPremium": {
+	  "prefix": "isPremium",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:isPremium(${2:bool})$3"
+	  ],
+	  "description": "Spell:isPremium"
+	},
+	"Spell:isEnabled": {
+	  "prefix": "isEnabled",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:isEnabled(${2:bool})$3"
+	  ],
+	  "description": "Spell:isEnabled"
+	},
+	"Spell:needTarget": {
+	  "prefix": "needTarget",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:needTarget(${2:bool})$3"
+	  ],
+	  "description": "Spell:needTarget"
+	},
+	"Spell:needWeapon": {
+	  "prefix": "needWeapon",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:needWeapon(${2:bool})$3"
+	  ],
+	  "description": "Spell:needWeapon"
+	},
+	"Spell:needLearn": {
+	  "prefix": "needLearn",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:needLearn(${2:bool})$3"
+	  ],
+	  "description": "Spell:needLearn"
+	},
+	"Spell:isSelfTarget": {
+	  "prefix": "isSelfTarget",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:isSelfTarget(${2:bool})$3"
+	  ],
+	  "description": "Spell:isSelfTarget"
+	},
+	"Spell:isBlocking": {
+	  "prefix": "isBlocking",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:isBlocking(${2:blockingSolid}, ${3:blockingCreature})$4"
+	  ],
+	  "description": "Spell:isBlocking"
+	},
+	"Spell:isAggressive": {
+	  "prefix": "isAggressive",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:isAggressive(${2:bool})$3"
+	  ],
+	  "description": "Spell:isAggressive"
+	},
+	"Spell:isPzLock": {
+	  "prefix": "isPzLock",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:isPzLock(${2:bool})$3"
+	  ],
+	  "description": "Spell:isPzLock"
+	},
+	"Spell:vocation": {
+	  "prefix": "vocation",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:vocation(${2:vocation})$3"
+	  ],
+	  "description": "Spell:vocation"
+	},
+	"Spell:words": {
+	  "prefix": "words",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:words(${2:words[}, ${3:separator = \"\"]})$4"
+	  ],
+	  "description": "Spell:words"
+	},
+	"Spell:needDirection": {
+	  "prefix": "needDirection",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:needDirection(${2:bool})$3"
+	  ],
+	  "description": "Spell:needDirection"
+	},
+	"Spell:hasParams": {
+	  "prefix": "hasParams",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:hasParams(${2:bool})$3"
+	  ],
+	  "description": "Spell:hasParams"
+	},
+	"Spell:hasPlayerNameParam": {
+	  "prefix": "hasPlayerNameParam",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:hasPlayerNameParam(${2:bool})$3"
+	  ],
+	  "description": "Spell:hasPlayerNameParam"
+	},
+	"Spell:needCasterTargetOrDirection": {
+	  "prefix": "needCasterTargetOrDirection",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:needCasterTargetOrDirection(${2:bool})$3"
+	  ],
+	  "description": "Spell:needCasterTargetOrDirection"
+	},
+	"Spell:blockWalls": {
+	  "prefix": "blockWalls",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:blockWalls(${2:bool})$3"
+	  ],
+	  "description": "Spell:blockWalls"
+	},
+	"Spell:runeLevel": {
+	  "prefix": "runeLevel",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:runeLevel(${2:level})$3"
+	  ],
+	  "description": "Spell:runeLevel"
+	},
+	"Spell:runeMagicLevel": {
+	  "prefix": "runeMagicLevel",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:runeMagicLevel(${2:magLevel})$3"
+	  ],
+	  "description": "Spell:runeMagicLevel"
+	},
+	"Spell:runeId": {
+	  "prefix": "runeId",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:runeId(${2:id})$3"
+	  ],
+	  "description": "Spell:runeId"
+	},
+	"Spell:charges": {
+	  "prefix": "charges",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:charges(${2:charges})$3"
+	  ],
+	  "description": "Spell:charges"
+	},
+	"Spell:allowFarUse": {
+	  "prefix": "allowFarUse",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:allowFarUse(${2:bool})$3"
+	  ],
+	  "description": "Spell:allowFarUse"
+	},
+	"Spell:checkFloor": {
+	  "prefix": "checkFloor",
+		"scope": "lua",
+		"body": [
+		"${1:spell}:checkFloor(${2:bool})$3"
+	  ],
+	  "description": "Spell:checkFloor"
+	},
+	"table.create": {
+	  "prefix": "table.create",
+		"scope": "lua",
+		"body": [
+		"table.create(${1:arrayLength}, ${2:keyLength})$3"
+	  ],
+	  "description": "table.create"
+	},
+	"table.pack": {
+	  "prefix": "table.pack",
+		"scope": "lua",
+		"body": [
+		"table.pack(${1:...})$2"
+	  ],
+	  "description": "table.pack"
+	},
+	"TalkAction": {
+	  "prefix": "TalkAction",
+		"scope": "lua",
+		"body": [
+		"TalkAction(${1:words})$2"
+	  ],
+	  "description": "TalkAction"
+	},
+	"Talkaction:onSay": {
+	  "prefix": "onSay",
+		"scope": "lua",
+		"body": [
+		"${1:talkaction}:onSay(${2:callback})$3"
+	  ],
+	  "description": "Talkaction:onSay"
+	},
+	"Talkaction:register": {
+	  "prefix": "register",
+		"scope": "lua",
+		"body": [
+		"${1:talkaction}:register()$2"
+	  ],
+	  "description": "Talkaction:register"
+	},
+	"Talkaction:separator": {
+	  "prefix": "separator",
+		"scope": "lua",
+		"body": [
+		"${1:talkaction}:separator(${2:sep})$3"
+	  ],
+	  "description": "Talkaction:separator"
+	},
+	"Talkaction:access": {
+	  "prefix": "access",
+		"scope": "lua",
+		"body": [
+		"${1:talkaction}:access(${2:needAccess = false})$3"
+	  ],
+	  "description": "Talkaction:access"
+	},
+	"Talkaction:accountType": {
+	  "prefix": "accountType",
+		"scope": "lua",
+		"body": [
+		"${1:talkaction}:accountType(${2:AccountType_t = ACCOUNT_TYPE_NORMAL})$3"
+	  ],
+	  "description": "Talkaction:accountType"
+	},
+	"Teleport": {
+	  "prefix": "Teleport",
+		"scope": "lua",
+		"body": [
+		"Teleport(${1:uid})$2"
+	  ],
+	  "description": "Teleport"
+	},
+	"Teleport:getDestination": {
+	  "prefix": "getDestination",
+		"scope": "lua",
+		"body": [
+		"${1:teleport}:getDestination()$2"
+	  ],
+	  "description": "Teleport:getDestination"
+	},
+	"Teleport:setDestination": {
+	  "prefix": "setDestination",
+		"scope": "lua",
+		"body": [
+		"${1:teleport}:setDestination(${2:position})$3"
+	  ],
+	  "description": "Teleport:setDestination"
+	},
+	"Tile": {
+	  "prefix": "Tile",
+		"scope": "lua",
+		"body": [
+		"Tile(${1:position})$2"
+	  ],
+	  "description": "Tile"
+	},
+	"Tile:remove": {
+	  "prefix": "remove",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:remove()$2"
+	  ],
+	  "description": "Tile:remove"
+	},
+	"Tile:getPosition": {
+	  "prefix": "getPosition",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getPosition()$2"
+	  ],
+	  "description": "Tile:getPosition"
+	},
+	"Tile:getGround": {
+	  "prefix": "getGround",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getGround()$2"
+	  ],
+	  "description": "Tile:getGround"
+	},
+	"Tile:getThing": {
+	  "prefix": "getThing",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getThing(${2:index})$3"
+	  ],
+	  "description": "Tile:getThing"
+	},
+	"Tile:getThingCount": {
+	  "prefix": "getThingCount",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getThingCount()$2"
+	  ],
+	  "description": "Tile:getThingCount"
+	},
+	"Tile:getTopVisibleThing": {
+	  "prefix": "getTopVisibleThing",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getTopVisibleThing(${2:creature})$3"
+	  ],
+	  "description": "Tile:getTopVisibleThing"
+	},
+	"Tile:getTopTopItem": {
+	  "prefix": "getTopTopItem",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getTopTopItem()$2"
+	  ],
+	  "description": "Tile:getTopTopItem"
+	},
+	"Tile:getTopDownItem": {
+	  "prefix": "getTopDownItem",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getTopDownItem()$2"
+	  ],
+	  "description": "Tile:getTopDownItem"
+	},
+	"Tile:getFieldItem": {
+	  "prefix": "getFieldItem",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getFieldItem()$2"
+	  ],
+	  "description": "Tile:getFieldItem"
+	},
+	"Tile:getItemById": {
+	  "prefix": "getItemById",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getItemById(${2:itemId[}, ${3:subType = -1]})$4"
+	  ],
+	  "description": "Tile:getItemById"
+	},
+	"Tile:getItemByType": {
+	  "prefix": "getItemByType",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getItemByType(${2:itemType})$3"
+	  ],
+	  "description": "Tile:getItemByType"
+	},
+	"Tile:getItemByTopOrder": {
+	  "prefix": "getItemByTopOrder",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getItemByTopOrder(${2:topOrder})$3"
+	  ],
+	  "description": "Tile:getItemByTopOrder"
+	},
+	"Tile:getItemCountById": {
+	  "prefix": "getItemCountById",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getItemCountById(${2:itemId[}, ${3:subType = -1]})$4"
+	  ],
+	  "description": "Tile:getItemCountById"
+	},
+	"Tile:getBottomCreature": {
+	  "prefix": "getBottomCreature",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getBottomCreature()$2"
+	  ],
+	  "description": "Tile:getBottomCreature"
+	},
+	"Tile:getTopCreature": {
+	  "prefix": "getTopCreature",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getTopCreature()$2"
+	  ],
+	  "description": "Tile:getTopCreature"
+	},
+	"Tile:getBottomVisibleCreature": {
+	  "prefix": "getBottomVisibleCreature",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getBottomVisibleCreature(${2:creature})$3"
+	  ],
+	  "description": "Tile:getBottomVisibleCreature"
+	},
+	"Tile:getTopVisibleCreature": {
+	  "prefix": "getTopVisibleCreature",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getTopVisibleCreature(${2:creature})$3"
+	  ],
+	  "description": "Tile:getTopVisibleCreature"
+	},
+	"Tile:getItems": {
+	  "prefix": "getItems",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getItems()$2"
+	  ],
+	  "description": "Tile:getItems"
+	},
+	"Tile:getItemCount": {
+	  "prefix": "getItemCount",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getItemCount()$2"
+	  ],
+	  "description": "Tile:getItemCount"
+	},
+	"Tile:getDownItemCount": {
+	  "prefix": "getDownItemCount",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getDownItemCount()$2"
+	  ],
+	  "description": "Tile:getDownItemCount"
+	},
+	"Tile:getTopItemCount": {
+	  "prefix": "getTopItemCount",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getTopItemCount()$2"
+	  ],
+	  "description": "Tile:getTopItemCount"
+	},
+	"Tile:getCreatures": {
+	  "prefix": "getCreatures",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getCreatures()$2"
+	  ],
+	  "description": "Tile:getCreatures"
+	},
+	"Tile:getCreatureCount": {
+	  "prefix": "getCreatureCount",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getCreatureCount()$2"
+	  ],
+	  "description": "Tile:getCreatureCount"
+	},
+	"Tile:hasProperty": {
+	  "prefix": "hasProperty",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:hasProperty(${2:property[}, ${3:item]})$4"
+	  ],
+	  "description": "Tile:hasProperty"
+	},
+	"Tile:getThingIndex": {
+	  "prefix": "getThingIndex",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getThingIndex(${2:thing})$3"
+	  ],
+	  "description": "Tile:getThingIndex"
+	},
+	"Tile:hasFlag": {
+	  "prefix": "hasFlag",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:hasFlag(${2:flag})$3"
+	  ],
+	  "description": "Tile:hasFlag"
+	},
+	"Tile:queryAdd": {
+	  "prefix": "queryAdd",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:queryAdd(${2:thing[}, ${3:flags]})$4"
+	  ],
+	  "description": "Tile:queryAdd"
+	},
+	"Tile:addItem": {
+	  "prefix": "addItem",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:addItem(${2:itemId[}, ${3:count/subType = 1[}, ${4:flags = 0]]})$5"
+	  ],
+	  "description": "Tile:addItem"
+	},
+	"Tile:addItemEx": {
+	  "prefix": "addItemEx",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:addItemEx(${2:item[}, ${3:flags = 0]})$4"
+	  ],
+	  "description": "Tile:addItemEx"
+	},
+	"Tile:getHouse": {
+	  "prefix": "getHouse",
+		"scope": "lua",
+		"body": [
+		"${1:tile}:getHouse()$2"
+	  ],
+	  "description": "Tile:getHouse"
+	},
+	"Town": {
+	  "prefix": "Town",
+		"scope": "lua",
+		"body": [
+		"Town(${1:id or name})$2"
+	  ],
+	  "description": "Town"
+	},
+	"Town:getId": {
+	  "prefix": "getId",
+		"scope": "lua",
+		"body": [
+		"${1:town}:getId()$2"
+	  ],
+	  "description": "Town:getId"
+	},
+	"Town:getName": {
+	  "prefix": "getName",
+		"scope": "lua",
+		"body": [
+		"${1:town}:getName()$2"
+	  ],
+	  "description": "Town:getName"
+	},
+	"Town:getTemplePosition": {
+	  "prefix": "getTemplePosition",
+		"scope": "lua",
+		"body": [
+		"${1:town}:getTemplePosition()$2"
+	  ],
+	  "description": "Town:getTemplePosition"
+	},
+	"Variant": {
+	  "prefix": "Variant",
+		"scope": "lua",
+		"body": [
+		"Variant(${1:number or string or position or thing})$2"
+	  ],
+	  "description": "Variant"
+	},
+	"Variant:getNumber": {
+	  "prefix": "getNumber",
+		"scope": "lua",
+		"body": [
+		"${1:variant}:getNumber()$2"
+	  ],
+	  "description": "Variant:getNumber"
+	},
+	"Variant:getString": {
+	  "prefix": "getString",
+		"scope": "lua",
+		"body": [
+		"${1:variant}:getString()$2"
+	  ],
+	  "description": "Variant:getString"
+	},
+	"Variant:getPosition": {
+	  "prefix": "getPosition",
+		"scope": "lua",
+		"body": [
+		"${1:variant}:getPosition()$2"
+	  ],
+	  "description": "Variant:getPosition"
+	},
+	"Vocation": {
+	  "prefix": "Vocation",
+		"scope": "lua",
+		"body": [
+		"Vocation(${1:id or name})$2"
+	  ],
+	  "description": "Vocation"
+	},
+	"Vocation:getId": {
+	  "prefix": "getId",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getId()$2"
+	  ],
+	  "description": "Vocation:getId"
+	},
+	"Vocation:getClientId": {
+	  "prefix": "getClientId",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getClientId()$2"
+	  ],
+	  "description": "Vocation:getClientId"
+	},
+	"Vocation:getName": {
+	  "prefix": "getName",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getName()$2"
+	  ],
+	  "description": "Vocation:getName"
+	},
+	"Vocation:getDescription": {
+	  "prefix": "getDescription",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getDescription()$2"
+	  ],
+	  "description": "Vocation:getDescription"
+	},
+	"Vocation:getRequiredSkillTries": {
+	  "prefix": "getRequiredSkillTries",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getRequiredSkillTries(${2:skillType}, ${3:skillLevel})$4"
+	  ],
+	  "description": "Vocation:getRequiredSkillTries"
+	},
+	"Vocation:getRequiredManaSpent": {
+	  "prefix": "getRequiredManaSpent",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getRequiredManaSpent(${2:magicLevel})$3"
+	  ],
+	  "description": "Vocation:getRequiredManaSpent"
+	},
+	"Vocation:getCapacityGain": {
+	  "prefix": "getCapacityGain",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getCapacityGain()$2"
+	  ],
+	  "description": "Vocation:getCapacityGain"
+	},
+	"Vocation:getHealthGain": {
+	  "prefix": "getHealthGain",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getHealthGain()$2"
+	  ],
+	  "description": "Vocation:getHealthGain"
+	},
+	"Vocation:getHealthGainTicks": {
+	  "prefix": "getHealthGainTicks",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getHealthGainTicks()$2"
+	  ],
+	  "description": "Vocation:getHealthGainTicks"
+	},
+	"Vocation:getHealthGainAmount": {
+	  "prefix": "getHealthGainAmount",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getHealthGainAmount()$2"
+	  ],
+	  "description": "Vocation:getHealthGainAmount"
+	},
+	"Vocation:getManaGain": {
+	  "prefix": "getManaGain",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getManaGain()$2"
+	  ],
+	  "description": "Vocation:getManaGain"
+	},
+	"Vocation:getManaGainTicks": {
+	  "prefix": "getManaGainTicks",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getManaGainTicks()$2"
+	  ],
+	  "description": "Vocation:getManaGainTicks"
+	},
+	"Vocation:getManaGainAmount": {
+	  "prefix": "getManaGainAmount",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getManaGainAmount()$2"
+	  ],
+	  "description": "Vocation:getManaGainAmount"
+	},
+	"Vocation:getMaxSoul": {
+	  "prefix": "getMaxSoul",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getMaxSoul()$2"
+	  ],
+	  "description": "Vocation:getMaxSoul"
+	},
+	"Vocation:getSoulGainTicks": {
+	  "prefix": "getSoulGainTicks",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getSoulGainTicks()$2"
+	  ],
+	  "description": "Vocation:getSoulGainTicks"
+	},
+	"Vocation:getAttackSpeed": {
+	  "prefix": "getAttackSpeed",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getAttackSpeed()$2"
+	  ],
+	  "description": "Vocation:getAttackSpeed"
+	},
+	"Vocation:getBaseSpeed": {
+	  "prefix": "getBaseSpeed",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getBaseSpeed()$2"
+	  ],
+	  "description": "Vocation:getBaseSpeed"
+	},
+	"Vocation:getDemotion": {
+	  "prefix": "getDemotion",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getDemotion()$2"
+	  ],
+	  "description": "Vocation:getDemotion"
+	},
+	"Vocation:getPromotion": {
+	  "prefix": "getPromotion",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:getPromotion()$2"
+	  ],
+	  "description": "Vocation:getPromotion"
+	},
+	"Vocation:allowsPvp": {
+	  "prefix": "allowsPvp",
+		"scope": "lua",
+		"body": [
+		"${1:vocation}:allowsPvp()$2"
+	  ],
+	  "description": "Vocation:allowsPvp"
+	},
+	"Weapon": {
+	  "prefix": "Weapon",
+		"scope": "lua",
+		"body": [
+		"Weapon(${1:type})$2"
+	  ],
+	  "description": "Weapon"
+	},
+	"Weapon:action": {
+	  "prefix": "action",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:action(${2:callback})$3"
+	  ],
+	  "description": "Weapon:action"
+	},
+	"Weapon:register": {
+	  "prefix": "register",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:register()$2"
+	  ],
+	  "description": "Weapon:register"
+	},
+	"Weapon:onUseWeapon": {
+	  "prefix": "onUseWeapon",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:onUseWeapon(${2:callback})$3"
+	  ],
+	  "description": "Weapon:onUseWeapon"
+	},
+	"Weapon:wieldedUnproperly": {
+	  "prefix": "wieldedUnproperly",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:wieldedUnproperly(${2:bool})$3"
+	  ],
+	  "description": "Weapon:wieldedUnproperly"
+	},
+	"Weapon:level": {
+	  "prefix": "level",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:level(${2:lvl})$3"
+	  ],
+	  "description": "Weapon:level"
+	},
+	"Weapon:magicLevel": {
+	  "prefix": "magicLevel",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:magicLevel(${2:lvl})$3"
+	  ],
+	  "description": "Weapon:magicLevel"
+	},
+	"Weapon:mana": {
+	  "prefix": "mana",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:mana(${2:mana})$3"
+	  ],
+	  "description": "Weapon:mana"
+	},
+	"Weapon:manaPercent": {
+	  "prefix": "manaPercent",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:manaPercent(${2:percent})$3"
+	  ],
+	  "description": "Weapon:manaPercent"
+	},
+	"Weapon:health": {
+	  "prefix": "health",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:health(${2:health})$3"
+	  ],
+	  "description": "Weapon:health"
+	},
+	"Weapon:healthPercent": {
+	  "prefix": "healthPercent",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:healthPercent(${2:percent})$3"
+	  ],
+	  "description": "Weapon:healthPercent"
+	},
+	"Weapon:soul": {
+	  "prefix": "soul",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:soul(${2:soul})$3"
+	  ],
+	  "description": "Weapon:soul"
+	},
+	"Weapon:breakChance": {
+	  "prefix": "breakChance",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:breakChance(${2:percent})$3"
+	  ],
+	  "description": "Weapon:breakChance"
+	},
+	"Weapon:damage": {
+	  "prefix": "damage",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:damage(${2:damage[min}, ${3:max]})$4"
+	  ],
+	  "description": "Weapon:damage"
+	},
+	"Weapon:element": {
+	  "prefix": "element",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:element(${2:combatType})$3"
+	  ],
+	  "description": "Weapon:element"
+	},
+	"Weapon:premium": {
+	  "prefix": "premium",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:premium(${2:bool})$3"
+	  ],
+	  "description": "Weapon:premium"
+	},
+	"Weapon:vocation": {
+	  "prefix": "vocation",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:vocation(${2:vocName[}, ${3:showInDescription = false}, ${4:lastVoc = false]})$5"
+	  ],
+	  "description": "Weapon:vocation"
+	},
+	"Weapon:id": {
+	  "prefix": "id",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:id(${2:id})$3"
+	  ],
+	  "description": "Weapon:id"
+	},
+	"Weapon:attack": {
+	  "prefix": "attack",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:attack(${2:atk})$3"
+	  ],
+	  "description": "Weapon:attack"
+	},
+	"Weapon:defense": {
+	  "prefix": "defense",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:defense(${2:defense[}, ${3:extraDefense]})$4"
+	  ],
+	  "description": "Weapon:defense"
+	},
+	"Weapon:range": {
+	  "prefix": "range",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:range(${2:range})$3"
+	  ],
+	  "description": "Weapon:range"
+	},
+	"Weapon:charges": {
+	  "prefix": "charges",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:charges(${2:charges[}, ${3:showCharges = true]})$4"
+	  ],
+	  "description": "Weapon:charges"
+	},
+	"Weapon:duration": {
+	  "prefix": "duration",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:duration(${2:duration[}, ${3:showDuration = true]})$4"
+	  ],
+	  "description": "Weapon:duration"
+	},
+	"Weapon:decayTo": {
+	  "prefix": "decayTo",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:decayTo(${2:[itemid = 0]})$3"
+	  ],
+	  "description": "Weapon:decayTo"
+	},
+	"Weapon:transformEquipTo": {
+	  "prefix": "transformEquipTo",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:transformEquipTo(${2:itemid})$3"
+	  ],
+	  "description": "Weapon:transformEquipTo"
+	},
+	"Weapon:transformDeEquipTo": {
+	  "prefix": "transformDeEquipTo",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:transformDeEquipTo(${2:itemid})$3"
+	  ],
+	  "description": "Weapon:transformDeEquipTo"
+	},
+	"Weapon:shootType": {
+	  "prefix": "shootType",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:shootType(${2:type})$3"
+	  ],
+	  "description": "Weapon:shootType"
+	},
+	"Weapon:slotType": {
+	  "prefix": "slotType",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:slotType(${2:slot})$3"
+	  ],
+	  "description": "Weapon:slotType"
+	},
+	"Weapon:ammoType": {
+	  "prefix": "ammoType",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:ammoType(${2:type})$3"
+	  ],
+	  "description": "Weapon:ammoType"
+	},
+	"Weapon:hitChance": {
+	  "prefix": "hitChance",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:hitChance(${2:chance})$3"
+	  ],
+	  "description": "Weapon:hitChance"
+	},
+	"Weapon:maxHitChance": {
+	  "prefix": "maxHitChance",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:maxHitChance(${2:max})$3"
+	  ],
+	  "description": "Weapon:maxHitChance"
+	},
+	"Weapon:extraElement": {
+	  "prefix": "extraElement",
+		"scope": "lua",
+		"body": [
+		"${1:weapon}:extraElement(${2:atk}, ${3:combatType})$4"
+	  ],
+	  "description": "Weapon:extraElement"
+	}
+  }
